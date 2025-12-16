@@ -30,20 +30,9 @@ main {
     display: block;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    font-size: inherit;
-    font-weight: inherit;
-}
-
-ul,
-ol li {
+li {
     list-style: none;
+    cursor: pointer;
 }
 
 img {
@@ -85,6 +74,8 @@ input[type="submit"] {
 
 input:focus,
 input:active,
+select:focus,
+select:active,
 button:focus,
 button:active {
     outline: none;

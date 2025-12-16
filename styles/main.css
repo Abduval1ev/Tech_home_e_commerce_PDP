@@ -7,4 +7,4 @@
 @import "./base/vars.css";
 /* Base */
 
-@import "./blocks/header.module.scss";
+@import "./blocks/header.module.css";
