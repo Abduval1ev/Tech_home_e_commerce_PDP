@@ -1,0 +1,50 @@
+body {
+    font-family: var(--main-font);
+    color: var(--text-main-color);
+
+}
+
+.container {
+    width: 100%;
+    max-width: 1920px;
+    padding: 0 var(--container-x);
+    margin: 0 auto;
+}
+
+
+.text_sm {
+    font-size: 12px;
+}
+
+.text_md {
+    font-size: 14px;
+}
+
+.text_lg {
+    font-size: 16px;
+}
+
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 14px;
+}
