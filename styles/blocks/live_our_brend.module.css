@@ -1,0 +1,25 @@
+.live_our_brends {
+    .live_our_brends_contents {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--gap-cards);
+
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+
+        @media screen and (max-width: 768px) {
+            grid-template-columns: 1fr;
+
+        }
+
+        .live_our_brends_content {
+
+            .live_our_brends_content_img {
+                width: 100%;
+                max-width: 800px;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.category {
+    .category_contents {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        gap: 10px;
+
+        @media screen and (max-width: 1200px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (max-width: 600px) {
+            grid-template-columns: 1fr;
+        }
+
+        .category_item {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            transition: ease 0.3s;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 40%;
+                transition: ease 0.2s;
+            }
+        }
+    }
+}

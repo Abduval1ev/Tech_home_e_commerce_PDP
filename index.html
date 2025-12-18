@@ -4,93 +4,627 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <script src="./scripts/"></script>
     <title>Tech House</title>
   </head>
   <body>
     <header>
-      <div class="container">
-        <nav class="navbar">
-          <div class="nav_logo">
-            <a href="#!">E-commerce</a>
-          </div>
-          <div class="nav_search">
-            <div class="nav_search_content">
-              <select class="navbar_select text_md" name="All categories">
-                <option class="text_md" value="1">All categories</option>
-                <option class="text_md" value="1">All categories</option>
-                <option class="text_md" value="1">All categories</option>
-                <option class="text_md" value="1">All categories</option>
-              </select>
-              <input
-                class="text_md navbar_input"
-                placeholder="Search anything"
-                type="text"
-              />
+      <nav class="menu_bar hidden">
+        <div class="container">sasas</div>
+      </nav>
+      <nav class="nav_bar">
+        <div class="container">
+          <div class="navbar">
+            <button class="nav_menu">
+              <img class="icon" src="./assets/images/Menu.png" alt="Image" />
+              <h2>Menu</h2>
+            </button>
+            <div class="nav_logo">
+              <h1>Tech House</h1>
             </div>
-            <img class="icon" src="./assets/images/search.png" alt="Image" />
+            <ul class="nav_extra_items">
+              <li class="nav_extra_items">
+                <a href="#"
+                  ><img
+                    class="icon"
+                    src="./assets/images/Search.png"
+                    alt="Image"
+                /></a>
+              </li>
+              <li class="nav_extra_items">
+                <a href="#"
+                  ><img
+                    class="icon"
+                    src="./assets/images/Heart.png"
+                    alt="Image"
+                /></a>
+              </li>
+              <li class="nav_extra_items">
+                <a href="#"
+                  ><img
+                    class="icon"
+                    src="./assets/images/Compare add.png"
+                    alt="Image"
+                /></a>
+              </li>
+              <li class="nav_extra_items">
+                <a href="#"
+                  ><img class="icon" src="./assets/images/Cart.png" alt="Image"
+                /></a>
+              </li>
+              <li class="nav_extra_items">
+                <a href="#"
+                  ><img
+                    class="icon"
+                    src="./assets/images/Profile.png"
+                    alt="Image"
+                /></a>
+              </li>
+            </ul>
           </div>
-          <ul class="nav_extra">
-            <li class="text_md">
-              <img src="./assets/images/User.png" alt="Image" />
-              Account
-            </li>
-            <li class="text_md">
-              <img src="./assets/images/Bag_alt.png" alt="Image" />
-              Shopping
-            </li>
-          </ul>
-        </nav>
-        <ul class="navbar_links">
-          <li class="navbar_link">
-            <a class="text_md" href="#">Jewelry & Accessories</a>
-          </li>
-          <li class="navbar_link">
-            <a class="text_md" href="#">Clothing & Shoes</a>
-          </li>
-          <li class="navbar_link">
-            <a class="text_md" href="#">Home & Living</a>
-          </li>
-          <li class="navbar_link">
-            <a class="text_md" href="#">Wedding & Party</a>
-          </li>
-          <li class="navbar_link">
-            <a class="text_md" href="#">Toys & Entertainment</a>
-          </li>
-          <li class="navbar_link">
-            <a class="text_md" href="#">Art & Collectibles</a>
-          </li>
-          <li class="navbar_link">
-            <a class="text_md" href="#">Craft Supplies & Tools</a>
-          </li>
-        </ul>
+        </div>
+      </nav>
+      <nav class="bottom_bar_bottom">
+        <div class="container">
+          <div class="bottom_bar">
+            <ul class="bottom_bar_items">
+              <li class="bottom_bar_item">
+                <a class="text_lg" href="#">
+                  <img
+                    class="icon"
+                    src="./assets/images/Home.png"
+                    alt="Images"
+                  />
+                  Home
+                </a>
+              </li>
+              <li class="bottom_bar_item">
+                <a class="text_lg" href="#">
+                  <img
+                    class="icon"
+                    src="./assets/images/Bullets.png"
+                    alt="Images"
+                  />
+                  Catalog
+                </a>
+              </li>
+              <li class="bottom_bar_item">
+                <a class="text_lg" href="#">
+                  <img
+                    class="icon"
+                    src="./assets/images/Heart.png"
+                    alt="Images"
+                  />
+                  Избранное
+                </a>
+              </li>
+              <li class="bottom_bar_item">
+                <a class="text_lg" href="#">
+                  <img
+                    class="icon"
+                    src="./assets/images/Cart.png"
+                    alt="Images"
+                  />
+                  Cart
+                </a>
+              </li>
+              <li class="bottom_bar_item">
+                <a class="text_lg" href="#">
+                  <img
+                    class="icon"
+                    src="./assets/images/More.png"
+                    alt="Images"
+                  />
+                  More
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header -->
 
-        <div class="mobile_menu">
-          <button class="burger" id="burger">
+    <section class="category">
+      <div class="container">
+        <div class="section_top">
+          <h1>Категории</h1>
+          <a class="section_top_link" href="#!">
+            <p class="text_lg">Все</p>
             <img
-              class="icon burger_img"
-              src="./assets/images/burger.png"
+              src="./assets/images/arrow-right-down.png"
+              class="icon"
               alt="Image"
             />
-          </button>
-          <div class="nav_search_mobile">
-            <div class="nav_search_content">
-              <select class="navbar_select text_md" name="All categories">
-                <option class="text_md" value="1">All categories</option>
-                <option class="text_md" value="1">All categories</option>
-                <option class="text_md" value="1">All categories</option>
-                <option class="text_md" value="1">All categories</option>
-              </select>
-              <input
-                class="text_md navbar_input"
-                placeholder="Search anything"
-                type="text"
-              />
+          </a>
+        </div>
+        <div class="category_contents">
+          <img
+            class="category_item"
+            src="./assets/images/airconditions.jpg"
+            alt="Image"
+          />
+
+          <img
+            class="category_item"
+            src="./assets/images/microwavee.webp"
+            alt="Image"
+          />
+
+          <img
+            class="category_item"
+            src="./assets/images/plita.jpg"
+            alt="Image"
+          />
+
+          <img
+            class="category_item"
+            src="./assets/images/water_machine.png"
+            alt="Image"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Category -->
+    <section class="news">
+      <div class="container">
+        <div class="section_top">
+          <h1>Новинки</h1>
+          <a class="section_top_link" href="#!">
+            <p class="text_lg">Все</p>
+            <img
+              src="./assets/images/arrow-right-down.png"
+              class="icon"
+              alt="Image"
+            />
+          </a>
+        </div>
+
+        <div class="news_cards">
+          <article class="news_card">
+            <div class="news_card_top">
+              <p class="text_lg card_status_news">Новинка</p>
+              <div class="news_card_top_img">
+                <img src="./assets/images/news_card_1.png" alt="Image" />
+              </div>
+              <div class="position_extra_icons">
+                <div class="position_extra_icon">
+                  <img
+                    class="icon"
+                    src="./assets/images/Heart.png"
+                    alt="Image"
+                  />
+                </div>
+                <div class="position_extra_icon">
+                  <img
+                    class="icon"
+                    src="./assets/images/Compare add.png"
+                    alt="Image"
+                  />
+                </div>
+                <div class="position_extra_icon">
+                  <img
+                    class="icon"
+                    src="./assets/images/ease.png"
+                    alt="Image"
+                  />
+                </div>
+              </div>
             </div>
-            <img class="icon" src="./assets/images/search.png" alt="Image" />
+            <div class="news_card_bottom">
+              <p class="text_xl">Сумка шоппер стеганая</p>
+              <ul>
+                <li class="text_md stock_in">Есть в наличии</li>
+                <li class="text_md">Арт.: 3690</li>
+              </ul>
+              <div class="news_card_bottom_content">
+                <h3 class="news_card_price">3 400 ₽</h3>
+                <button class="text_xl cards_button">В корзину</button>
+              </div>
+            </div>
+          </article>
+          <article class="news_card">
+            <div class="news_card_top">
+              <p class="text_lg card_status_news">Новинка</p>
+              <div class="news_card_top_img">
+                <img src="./assets/images/news_card_2.png" alt="Image" />
+              </div>
+              <div class="position_extra_icons">
+                <div class="position_extra_icon">
+                  <img
+                    class="icon"
+                    src="./assets/images/Heart.png"
+                    alt="Image"
+                  />
+                </div>
+                <div class="position_extra_icon">
+                  <img
+                    class="icon"
+                    src="./assets/images/Compare add.png"
+                    alt="Image"
+                  />
+                </div>
+                <div class="position_extra_icon">
+                  <img
+                    class="icon"
+                    src="./assets/images/ease.png"
+                    alt="Image"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="news_card_bottom">
+              <p class="text_xl">Сумка шоппер стеганая</p>
+              <ul>
+                <li class="text_md stock_in">Есть в наличии</li>
+                <li class="text_md">Арт.: 3690</li>
+              </ul>
+              <div class="news_card_bottom_content">
+                <h3 class="news_card_price">3 400 ₽</h3>
+                <button class="text_xl cards_button">В корзину</button>
+              </div>
+            </div>
+          </article>
+          <article class="news_card">
+            <div class="news_card_top">
+              <p class="text_lg card_status_news">Новинка</p>
+              <div class="news_card_top_img">
+                <img src="./assets/images/news_card_3.png" alt="Image" />
+              </div>
+              <div class="position_extra_icons">
+                <div class="position_extra_icon">
+                  <img
+                    class="icon"
+                    src="./assets/images/Heart.png"
+                    alt="Image"
+                  />
+                </div>
+                <div class="position_extra_icon">
+                  <img
+                    class="icon"
+                    src="./assets/images/Compare add.png"
+                    alt="Image"
+                  />
+                </div>
+                <div class="position_extra_icon">
+                  <img
+                    class="icon"
+                    src="./assets/images/ease.png"
+                    alt="Image"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="news_card_bottom">
+              <p class="text_xl">Сумка шоппер стеганая</p>
+              <ul>
+                <li class="text_md stock_in">Есть в наличии</li>
+                <li class="text_md">Арт.: 3690</li>
+              </ul>
+              <div class="news_card_bottom_content">
+                <h3 class="news_card_price">3 400 ₽</h3>
+                <button class="text_xl cards_button">В корзину</button>
+              </div>
+            </div>
+          </article>
+          <article class="news_card">
+            <div class="news_card_top">
+              <p class="text_lg card_status_news">Новинка</p>
+              <div class="news_card_top_img">
+                <img src="./assets/images/news_card_4.png" alt="Image" />
+              </div>
+              <div class="position_extra_icons">
+                <div class="position_extra_icon">
+                  <img
+                    class="icon"
+                    src="./assets/images/Heart.png"
+                    alt="Image"
+                  />
+                </div>
+                <div class="position_extra_icon">
+                  <img
+                    class="icon"
+                    src="./assets/images/Compare add.png"
+                    alt="Image"
+                  />
+                </div>
+                <div class="position_extra_icon">
+                  <img
+                    class="icon"
+                    src="./assets/images/ease.png"
+                    alt="Image"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="news_card_bottom">
+              <p class="text_xl">Сумка шоппер стеганая</p>
+              <ul>
+                <li class="text_md stock_in">Есть в наличии</li>
+                <li class="text_md">Арт.: 3690</li>
+              </ul>
+              <div class="news_card_bottom_content">
+                <h3 class="news_card_price">3 400 ₽</h3>
+                <button class="text_xl cards_button">В корзину</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- News -->
+    <section class="hits">
+      <div class="container">
+        <div class="section_top">
+          <h1>Хиты</h1>
+          <a class="section_top_link" href="#!">
+            <p class="text_lg">Все</p>
+            <img
+              src="./assets/images/arrow-right-down.png"
+              class="icon"
+              alt="Image"
+            />
+          </a>
+        </div>
+
+        <div class="news_cards">
+          <article class="news_card">
+            <div class="news_card_top">
+              <p class="text_lg card_status_hits">Хит</p>
+              <div class="news_card_top_img">
+                <img src="./assets/images/news_card_1.png" alt="Image" />
+              </div>
+              <div class="position_extra_icons">
+                <div class="position_extra_icon">
+                  <img
+                    class="icon"
+                    src="./assets/images/Heart.png"
+                    alt="Image"
+                  />
+                </div>
+                <div class="position_extra_icon">
+                  <img
+                    class="icon"
+                    src="./assets/images/Compare add.png"
+                    alt="Image"
+                  />
+                </div>
+                <div class="position_extra_icon">
+                  <img
+                    class="icon"
+                    src="./assets/images/ease.png"
+                    alt="Image"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="news_card_bottom">
+              <p class="text_xl">Сумка шоппер стеганая</p>
+              <ul>
+                <li class="text_md stock_in">Есть в наличии</li>
+                <li class="text_md">Арт.: 3690</li>
+              </ul>
+              <div class="news_card_bottom_content">
+                <h3 class="news_card_price">3 400 ₽</h3>
+                <button class="text_xl cards_button">В корзину</button>
+              </div>
+            </div>
+          </article>
+          <article class="news_card">
+            <div class="news_card_top">
+              <p class="text_lg card_status_hits">Хит</p>
+              <div class="news_card_top_img">
+                <img src="./assets/images/news_card_2.png" alt="Image" />
+              </div>
+              <div class="position_extra_icons">
+                <div class="position_extra_icon">
+                  <img
+                    class="icon"
+                    src="./assets/images/Heart.png"
+                    alt="Image"
+                  />
+                </div>
+                <div class="position_extra_icon">
+                  <img
+                    class="icon"
+                    src="./assets/images/Compare add.png"
+                    alt="Image"
+                  />
+                </div>
+                <div class="position_extra_icon">
+                  <img
+                    class="icon"
+                    src="./assets/images/ease.png"
+                    alt="Image"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="news_card_bottom">
+              <p class="text_xl">Сумка шоппер стеганая</p>
+              <ul>
+                <li class="text_md stock_in">Есть в наличии</li>
+                <li class="text_md">Арт.: 3690</li>
+              </ul>
+              <div class="news_card_bottom_content">
+                <h3 class="news_card_price">3 400 ₽</h3>
+                <button class="text_xl cards_button">В корзину</button>
+              </div>
+            </div>
+          </article>
+          <article class="news_card">
+            <div class="news_card_top">
+              <p class="text_lg card_status_hits">Хит</p>
+              <div class="news_card_top_img">
+                <img src="./assets/images/news_card_3.png" alt="Image" />
+              </div>
+              <div class="position_extra_icons">
+                <div class="position_extra_icon">
+                  <img
+                    class="icon"
+                    src="./assets/images/Heart.png"
+                    alt="Image"
+                  />
+                </div>
+                <div class="position_extra_icon">
+                  <img
+                    class="icon"
+                    src="./assets/images/Compare add.png"
+                    alt="Image"
+                  />
+                </div>
+                <div class="position_extra_icon">
+                  <img
+                    class="icon"
+                    src="./assets/images/ease.png"
+                    alt="Image"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="news_card_bottom">
+              <p class="text_xl">Сумка шоппер стеганая</p>
+              <ul>
+                <li class="text_md stock_out">Нет в наличии</li>
+                <li class="text_md">Арт.: 3690</li>
+              </ul>
+              <div class="news_card_bottom_content">
+                <h3 class="news_card_price">3 400 ₽</h3>
+                <button class="text_xl cards_button">В корзину</button>
+              </div>
+            </div>
+          </article>
+          <article class="news_card">
+            <div class="news_card_top">
+              <p class="text_lg card_status_hits">Хит</p>
+              <div class="news_card_top_img">
+                <img src="./assets/images/news_card_4.png" alt="Image" />
+              </div>
+              <div class="position_extra_icons">
+                <div class="position_extra_icon">
+                  <img
+                    class="icon"
+                    src="./assets/images/Heart.png"
+                    alt="Image"
+                  />
+                </div>
+                <div class="position_extra_icon">
+                  <img
+                    class="icon"
+                    src="./assets/images/Compare add.png"
+                    alt="Image"
+                  />
+                </div>
+                <div class="position_extra_icon">
+                  <img
+                    class="icon"
+                    src="./assets/images/ease.png"
+                    alt="Image"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="news_card_bottom">
+              <p class="text_xl">Сумка шоппер стеганая</p>
+              <ul>
+                <li class="text_md stock_in">Есть в наличии</li>
+                <li class="text_md">Арт.: 3690</li>
+              </ul>
+              <div class="news_card_bottom_content">
+                <h3 class="news_card_price">3 400 ₽</h3>
+                <button class="text_xl cards_button">В корзину</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- Hits -->
+    <section class="live_our_brends">
+      <div class="container">
+        <div class="section_top">
+          <h1>Жизнь нашего бренда</h1>
+          <a class="section_top_link" href="#!">
+            <p class="text_lg">Все</p>
+            <img
+              src="./assets/images/arrow-right-down.png"
+              class="icon"
+              alt="Image"
+            />
+          </a>
+        </div>
+
+        <div class="live_our_brends_contents">
+          <div class="live_our_brends_content">
+            <img
+              class="live_our_brends_content_img"
+              src="./assets/images/live_our_brand.jpg"
+              alt="Image"
+            />
+          </div>
+          <div class="live_our_brends_content">
+            <img
+              class="live_our_brends_content_img"
+              src="./assets/images/live_our_brand.jpg"
+              alt="Image"
+            />
+          </div>
+          <div class="live_our_brends_content">
+            <img
+              class="live_our_brends_content_img"
+              src="./assets/images/live_our_brand.jpg"
+              alt="Image"
+            />
           </div>
         </div>
       </div>
-    </header>
-    <main></main>
+    </section>
+    <!-- Live our brends -->
+
+    <footer>
+      <div class="footer_top">
+        <div class="container">
+          <div class="footer_top_content">
+            <h1>Tech House</h1>
+            <div>
+              <p class="text_xl">+7 (499) 999-82-83</p>
+              <p class="text_xl">rostelecom.merc@rt.ru</p>
+            </div>
+            <div>
+              <p class="text_xl">vc.ru</p>
+              <p class="text_xl">habr.com</p>
+            </div>
+            <div class="footer_top_content_buttons">
+              <button>
+                <img src="./assets/images/tg.png" class="icon" alt="Image" />
+              </button>
+              <button>
+                <img src="./assets/images/vk.png" class="icon" alt="Image" />
+              </button>
+              <button>
+                <img
+                  src="./assets/images/youtube.png"
+                  class="icon"
+                  alt="Image"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="container">
+          <div class="footer_bottom_content">
+            <p class="text_md">
+              © 2023 ПАО «Ростелеком» Все права защищены (18+)
+            </p>
+            <p class="text_md">Политика обработки данных</p>
+            <p class="text_md">Политика конфиденциальности</p>
+            <p class="text_md">Мобильная версия</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
   </body>
 </html>

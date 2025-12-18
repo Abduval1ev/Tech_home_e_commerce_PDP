@@ -1,28 +1,32 @@
 :root {
-    --main-font: "Poppins", sans-serif;
+    --main-font: "Inter", sans-serif;
     /* Fonts */
+    --extra-sz: clamp(6.25rem, 0.176rem + 19.44vw, 23.5rem);
+    /* Font-size */
     --white: #ffffff;
-    --main-primary: #eb6d20;
-    --main-second: #eb8426;
-    --base-border: #e9e9e9;
-    --base-background: #fdfdfd;
-    --base-soft-background: #fff9f3;
-    --base-gray-background: #f5f6f8;
-    --text-light-color: #d6d6d6;
-    --text-medium-color: #5f5f5f;
-    --text-regular-color: #303030;
-    --text-none-color: #121212;
-    --text-thick-black: #040404;
-    --text-middle-black: #0b0b0b;
-    --text-soft-black: #1b1b1b;
-    --text-main-color: #3e3e3e;
-    --text-color-subtext: #9a9a9a;
-    --text-color-paragraph: #292929;
-    --sys-success-color: #6db95a;
-    --sys-error-color: #dd5e5e;
-    --sys-warning-color: #d89614;
-    --sys-url-color: #177ddc;
+    --button-bg: #9466FF;
+    --main-dark-blue: #273A64;
+    --active-menu-dark-blue: #101828;
+    --main-orange: #FF4F12;
+    --main-purpile: #7700FF;
+    --main-red: #FF4747;
+    --main-yellow: #FFCA00;
+    --main-blue: #4075FF;
+    --main-pink: #FFBFC3;
+    --main-green: #26DA72;
+    --dark-green: #16D9A6;
+    --main-bg-background: #1D2533;
+    --base-light: #E8E9EA;
+    --base-grey: #A5A8AD;
+    --base-gray: #777C85;
+    --dark-gray: #565C66;
+    --bg-background: #242C39;
+    --dark-background: #333A47;
+    --dark-bg-background: #2A323F;
     /* Colors */
-    --container-x: clamp(1rem, -4.917rem + 19.72vw, 18.75rem);
+    --container-x: clamp(1rem, -2.833rem + 12.78vw, 12.5rem);
+    --space-section-title-y: clamp(0.75rem, 0.167rem + 1.94vw, 2.5rem);
+    --space-section-y: clamp(4rem, 3.667rem + 1.11vw, 5rem);
     /* Padding */
+    --gap-cards: clamp(0.625rem, 0.167rem + 1.53vw, 2rem);
 }

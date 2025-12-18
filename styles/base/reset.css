@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     border: none;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -19,6 +20,10 @@ a:visited {
 
 a:hover {
     text-decoration: none;
+}
+
+*:focus(:focus-visible) {
+    outline: none;
 }
 
 aside,
