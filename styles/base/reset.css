@@ -16,6 +16,7 @@ a:link,
 a:visited {
     text-decoration: none;
     color: inherit;
+    /* height: 100%; */
 }
 
 a:hover {

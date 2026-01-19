@@ -12,3 +12,6 @@
 @import "./blocks/category.module.css";
 @import "./blocks/news.module.css";
 @import "./blocks/live_our_brend.module.css";
+@import "./blocks/catalog.module.css";
+@import "./blocks/card_details.module.css";
+@import "./blocks/card.module.css";

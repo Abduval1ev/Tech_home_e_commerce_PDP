@@ -1,14 +1,17 @@
 footer {
-    background-color: var(--dark-background);
+    position: static;
+    width: 100%;
+    bottom: 0;
+    color: var(--white);
+    background-color: var(--active-menu-dark-blue);
 
     .footer_top {
         .footer_top_content {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             align-items: center;
-            gap: 24px;
+            gap: var(--gap-cards);
             padding: 32px 0;
-            color: var(--base-light);
 
             @media screen and (max-width: 1200px) {
                 grid-template-columns: repeat(2, 1fr);
@@ -17,7 +20,6 @@ footer {
             @media screen and (max-width: 600px) {
                 grid-template-columns: 1fr;
                 text-align: center;
-
             }
 
 
@@ -43,14 +45,12 @@ footer {
     }
 
     .footer_bottom {
-        background-color: var(--bg-background);
-
         .footer_bottom_content {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             align-items: center;
             padding: 32px 0;
-            gap: 24px;
+            gap: var(--gap-cards);
             color: var(--base-gray);
 
             @media screen and (max-width: 1200px) {

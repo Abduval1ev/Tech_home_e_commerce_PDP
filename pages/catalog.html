@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <script type="module" src="../scripts/index.js" defer></script>
+    <title>Catalog</title>
+  </head>
+
+  <body>
+    <nav class="nav_bar">
+      <div class="container">
+        <div class="navbar">
+          <div class="nav_logo">
+            <a href="/">
+              <h1>Tech House</h1>
+            </a>
+          </div>
+          <ul class="nav_extra_items">
+            <li class="nav_link text_xl">
+              <a href="/">Asosiy</a>
+            </li>
+            <li class="nav_link text_xl">
+              <a href="./about.html">Biz haqimizda</a>
+            </li>
+            <li class="nav_link text_xl">
+              <a href="./products.html">Mahsulotlar</a>
+            </li>
+            <li class="nav_link text_xl">
+              <a href="./fillials.html">Filialar</a>
+            </li>
+            <li class="nav_link text_xl">
+              <a href="./contact.html">Kontakt</a>
+            </li>
+            <li class="nav_extra_items">
+              <a href="#">
+                <img
+                  class="icon"
+                  src="../assets/images/Search.png"
+                  alt="Image"
+                />
+              </a>
+            </li>
+            <li class="nav_extra_items">
+              <a href="#">
+                <img
+                  class="icon"
+                  src="../assets/images/Heart.png"
+                  alt="Image"
+                />
+              </a>
+            </li>
+            <li class="nav_extra_items">
+              <a href="#">
+                <img class="icon" src="../assets/images/Cart.png" alt="Image" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <section>
+        <h2>Katalog</h2>
+
+        <div class="filters text_xl">
+          <select id="categorySelect"></select>
+          <select id="priceSelect">
+            <option value="Barchasi">Barchasi</option>
+            <option value="Low">Kam < 10</option>
+            <option value="High">Baland > 10</option>
+          </select>
+          <select id="popularitySelect">
+            <option value="Barchasi">Barchasi</option>
+            <option value="Popular">Mashhurlari</option>
+            <option value="Unpopular">Yangilari</option>
+          </select>
+        </div>
+        <div class="news_cards" id="productContainer"></div>
+      </section>
+    </div>
+
+    <nav class="bottom_bar_bottom">
+      <div class="container">
+        <div class="bottom_bar">
+          <ul class="bottom_bar_items">
+            <li class="bottom_bar_item">
+              <a class="text_lg" href="#">
+                <img
+                  class="icon"
+                  src="../assets/images/Home.png"
+                  alt="Images"
+                />
+                Home
+              </a>
+            </li>
+            <li class="bottom_bar_item">
+              <a class="text_lg" href="#">
+                <img
+                  class="icon"
+                  src="../assets/images/Bullets.png"
+                  alt="Images"
+                />
+                Catalog
+              </a>
+            </li>
+            <li class="bottom_bar_item">
+              <a class="text_lg" href="#">
+                <img
+                  class="icon"
+                  src="../assets/images/Heart.png"
+                  alt="Images"
+                />
+                Избранное
+              </a>
+            </li>
+            <li class="bottom_bar_item">
+              <a class="text_lg" href="#">
+                <img
+                  class="icon"
+                  src="../assets/images/Cart.png"
+                  alt="Images"
+                />
+                Cart
+              </a>
+            </li>
+            <li class="bottom_bar_item" id="nav_menu">
+              <a class="text_lg" href="#">
+                <img
+                  class="icon"
+                  src="../assets/images/More.png"
+                  alt="Images"
+                />
+                More
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <footer>
+      <div class="footer_top">
+        <div class="container">
+          <div class="footer_top_content">
+            <h1>Tech House</h1>
+            <div>
+              <p class="text_xl">+998 (99) 999-99-99</p>
+              <p class="text_xl">tech_house.house@gmail.com</p>
+            </div>
+            <div>
+              <p class="text_xl">instagram.ru</p>
+              <p class="text_xl">house.com</p>
+            </div>
+            <div class="footer_top_content_buttons">
+              <button>
+                <img
+                  class="card_image"
+                  src="../assets/images/tg.png"
+                  class="icon"
+                  alt="Image"
+                />
+              </button>
+              <button>
+                <img
+                  class="card_image"
+                  src="../assets/images/vk.png"
+                  class="icon"
+                  alt="Image"
+                />
+              </button>
+              <button>
+                <img
+                  src="../assets/images/youtube.png"
+                  class="icon"
+                  alt="Image"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="container">
+          <div class="footer_bottom_content">
+            <p class="text_md">© 2023 ПАО Все права защищены</p>
+            <p class="text_md">Политика обработки данных</p>
+            <p class="text_md">Политика конфиденциальности</p>
+            <p class="text_md">Мобильная версия</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -4,61 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/main.css" />
-    <script src="./scripts/"></script>
+    <script src="./scripts/index.js" defer></script>
     <title>Tech House</title>
   </head>
   <body>
+    <!-- <nav class="menu_bar hidden" id="menu_bar">
+      <div class="container">
+        <div class="menu_bar_bg">
+          <div class="menu_bar_top">
+            <a href="/">
+              <img src="../assets/images/e-commerce-logo.png" alt="Logo" />
+            </a>
+            <div class="menu_bar_top_right">
+              <button id="menu_bar_close">
+                <img class="icon" src="./assets/images/Close.png" alt="Image" />
+              </button>
+            </div>
+          </div>
+          <div class="menu_bar_bottom">
+            <ul class="menu_bar_bottom_links">
+              <h2 class="menu_bar_bottom_link">
+                <a href="./pages/catalog.html">Katalog</a>
+              </h2>
+              <h2 class="menu_bar_bottom_link">
+                <a href="#!">Sotib olivchilarga</a>
+              </h2>
+              <h2 class="menu_bar_bottom_link">
+                <a href="./pages/card.html">Savat</a>
+              </h2>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav> -->
     <header>
-      <nav class="menu_bar hidden">
-        <div class="container">sasas</div>
-      </nav>
       <nav class="nav_bar">
         <div class="container">
           <div class="navbar">
-            <button class="nav_menu">
-              <img class="icon" src="./assets/images/Menu.png" alt="Image" />
-              <h2>Menu</h2>
-            </button>
             <div class="nav_logo">
-              <h1>Tech House</h1>
+              <a href="/">
+                <h1>Tech House</h1>
+              </a>
             </div>
             <ul class="nav_extra_items">
-              <li class="nav_extra_items">
-                <a href="#"
-                  ><img
-                    class="icon"
-                    src="./assets/images/Search.png"
-                    alt="Image"
-                /></a>
+              <li class="nav_link text_xl">
+                <a href="/">Asosiy</a>
               </li>
-              <li class="nav_extra_items">
-                <a href="#"
-                  ><img
-                    class="icon"
-                    src="./assets/images/Heart.png"
-                    alt="Image"
-                /></a>
+              <li class="nav_link text_xl">
+                <a href="./pages/about.html">Biz haqimizda</a>
               </li>
-              <li class="nav_extra_items">
-                <a href="#"
-                  ><img
-                    class="icon"
-                    src="./assets/images/Compare add.png"
-                    alt="Image"
-                /></a>
+              <li class="nav_link text_xl">
+                <a href="./pages/products.html">Mahsulotlar</a>
               </li>
-              <li class="nav_extra_items">
-                <a href="#"
-                  ><img class="icon" src="./assets/images/Cart.png" alt="Image"
-                /></a>
+              <li class="nav_link text_xl">
+                <a href="./pages/fillials.html">Filialar</a>
               </li>
-              <li class="nav_extra_items">
-                <a href="#"
-                  ><img
+              <li class="nav_link text_xl">
+                <a href="./pages/contact.html">Kontakt</a>
+              </li>
+              <li class="nav_extra_item">
+                <a href="#">
+                  <img
                     class="icon"
-                    src="./assets/images/Profile.png"
+                    src="../assets/images/Search.png"
                     alt="Image"
-                /></a>
+                  />
+                </a>
+              </li>
+              <li class="nav_extra_item">
+                <a href="#">
+                  <img
+                    class="icon"
+                    src="../assets/images/Heart.png"
+                    alt="Image"
+                  />
+                </a>
+              </li>
+              <li class="nav_extra_item">
+                <a href="#">
+                  <img
+                    class="icon"
+                    src="../assets/images/Cart.png"
+                    alt="Image"
+                  />
+                </a>
               </li>
             </ul>
           </div>
@@ -75,19 +104,10 @@
                     src="./assets/images/Home.png"
                     alt="Images"
                   />
-                  Home
+                  Asosiy
                 </a>
               </li>
-              <li class="bottom_bar_item">
-                <a class="text_lg" href="#">
-                  <img
-                    class="icon"
-                    src="./assets/images/Bullets.png"
-                    alt="Images"
-                  />
-                  Catalog
-                </a>
-              </li>
+
               <li class="bottom_bar_item">
                 <a class="text_lg" href="#">
                   <img
@@ -95,7 +115,7 @@
                     src="./assets/images/Heart.png"
                     alt="Images"
                   />
-                  Избранное
+                  Tanlanganar
                 </a>
               </li>
               <li class="bottom_bar_item">
@@ -105,17 +125,17 @@
                     src="./assets/images/Cart.png"
                     alt="Images"
                   />
-                  Cart
+                  Savat
                 </a>
               </li>
-              <li class="bottom_bar_item">
+              <li class="bottom_bar_item" id="nav_menu">
                 <a class="text_lg" href="#">
                   <img
                     class="icon"
                     src="./assets/images/More.png"
                     alt="Images"
                   />
-                  More
+                  Kengroq
                 </a>
               </li>
             </ul>
@@ -125,12 +145,18 @@
     </header>
     <!-- Header -->
 
+    <section class="hero">
+      <div class="container">
+        
+      </div>
+    </section>
+
     <section class="category">
       <div class="container">
         <div class="section_top">
-          <h1>Категории</h1>
-          <a class="section_top_link" href="#!">
-            <p class="text_lg">Все</p>
+          <h1>Kategoriyalar</h1>
+          <a class="section_top_link" href="./pages/catalog.html">
+            <p class="text_lg">Barchasi</p>
             <img
               src="./assets/images/arrow-right-down.png"
               class="icon"
@@ -139,39 +165,45 @@
           </a>
         </div>
         <div class="category_contents">
-          <img
-            class="category_item"
-            src="./assets/images/airconditions.jpg"
-            alt="Image"
-          />
-
-          <img
-            class="category_item"
-            src="./assets/images/microwavee.webp"
-            alt="Image"
-          />
-
-          <img
-            class="category_item"
-            src="./assets/images/plita.jpg"
-            alt="Image"
-          />
-
-          <img
-            class="category_item"
-            src="./assets/images/water_machine.png"
-            alt="Image"
-          />
+          <a href="./pages/catalog.html">
+            <img
+              class="category_item"
+              src="./assets/images/airconditions.jpg"
+              alt="Image"
+            />
+          </a>
+          <a href="./pages/catalog.html">
+            <img
+              class="category_item"
+              src="./assets/images/microwavee.webp"
+              alt="Image"
+            />
+          </a>
+          <a href="./pages/catalog.html">
+            <img
+              class="category_item"
+              src="./assets/images/plita.jpg"
+              alt="Image"
+            />
+          </a>
+          <a href="./pages/catalog.html">
+            <img
+              class="category_item"
+              src="./assets/images/water_machine.png"
+              alt="Image"
+            />
+          </a>
         </div>
       </div>
     </section>
     <!-- Category -->
+
     <section class="news">
       <div class="container">
         <div class="section_top">
-          <h1>Новинки</h1>
-          <a class="section_top_link" href="#!">
-            <p class="text_lg">Все</p>
+          <h1>Yengilar</h1>
+          <a class="section_top_link" href="./pages/catalog.html">
+            <p class="text_lg">Barchasi</p>
             <img
               src="./assets/images/arrow-right-down.png"
               class="icon"
@@ -183,33 +215,15 @@
         <div class="news_cards">
           <article class="news_card">
             <div class="news_card_top">
-              <p class="text_lg card_status_news">Новинка</p>
-              <div class="news_card_top_img">
-                <img src="./assets/images/news_card_1.png" alt="Image" />
-              </div>
-              <div class="position_extra_icons">
-                <div class="position_extra_icon">
+              <a href="./pages/catalog.html">
+                <div class="news_card_top_img">
                   <img
-                    class="icon"
-                    src="./assets/images/Heart.png"
+                    class="card_image"
+                    src="./assets/images/airconditioner.png"
                     alt="Image"
                   />
                 </div>
-                <div class="position_extra_icon">
-                  <img
-                    class="icon"
-                    src="./assets/images/Compare add.png"
-                    alt="Image"
-                  />
-                </div>
-                <div class="position_extra_icon">
-                  <img
-                    class="icon"
-                    src="./assets/images/ease.png"
-                    alt="Image"
-                  />
-                </div>
-              </div>
+              </a>
             </div>
             <div class="news_card_bottom">
               <p class="text_xl">Сумка шоппер стеганая</p>
@@ -219,39 +233,50 @@
               </ul>
               <div class="news_card_bottom_content">
                 <h3 class="news_card_price">3 400 ₽</h3>
-                <button class="text_xl cards_button">В корзину</button>
+                <button class="text_xl cards_button">
+                  <a href="./pages/card.html">Savatga</a>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="news_card">
+            <div class="news_card_top">
+              <a href="./pages/catalog.html">
+                <div class="news_card_top_img">
+                  <img
+                    class="card_image"
+                    src="./assets/images/Fan.png"
+                    alt="Image"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="news_card_bottom">
+              <p class="text_xl">Сумка шоппер стеганая</p>
+              <ul>
+                <li class="text_md stock_in">Есть в наличии</li>
+                <li class="text_md">Арт.: 3690</li>
+              </ul>
+              <div class="news_card_bottom_content">
+                <h3 class="news_card_price">3 400 ₽</h3>
+                <button class="text_xl cards_button">
+                  <a href="./pages/card.html">Savatga</a>
+                </button>
               </div>
             </div>
           </article>
           <article class="news_card">
             <div class="news_card_top">
-              <p class="text_lg card_status_news">Новинка</p>
-              <div class="news_card_top_img">
-                <img src="./assets/images/news_card_2.png" alt="Image" />
-              </div>
-              <div class="position_extra_icons">
-                <div class="position_extra_icon">
+              <a href="./pages/catalog.html">
+                <div class="news_card_top_img">
                   <img
-                    class="icon"
-                    src="./assets/images/Heart.png"
+                    class="card_image"
+                    src="./assets/images/microwave.png"
                     alt="Image"
                   />
                 </div>
-                <div class="position_extra_icon">
-                  <img
-                    class="icon"
-                    src="./assets/images/Compare add.png"
-                    alt="Image"
-                  />
-                </div>
-                <div class="position_extra_icon">
-                  <img
-                    class="icon"
-                    src="./assets/images/ease.png"
-                    alt="Image"
-                  />
-                </div>
-              </div>
+              </a>
             </div>
             <div class="news_card_bottom">
               <p class="text_xl">Сумка шоппер стеганая</p>
@@ -261,39 +286,23 @@
               </ul>
               <div class="news_card_bottom_content">
                 <h3 class="news_card_price">3 400 ₽</h3>
-                <button class="text_xl cards_button">В корзину</button>
+                <button class="text_xl cards_button">
+                  <a href="./pages/card.html">Savatga</a>
+                </button>
               </div>
             </div>
           </article>
           <article class="news_card">
             <div class="news_card_top">
-              <p class="text_lg card_status_news">Новинка</p>
-              <div class="news_card_top_img">
-                <img src="./assets/images/news_card_3.png" alt="Image" />
-              </div>
-              <div class="position_extra_icons">
-                <div class="position_extra_icon">
+              <a href="./pages/catalog.html">
+                <div class="news_card_top_img">
                   <img
-                    class="icon"
-                    src="./assets/images/Heart.png"
+                    class="card_image"
+                    src="./assets/images/Washing_Machine.png"
                     alt="Image"
                   />
                 </div>
-                <div class="position_extra_icon">
-                  <img
-                    class="icon"
-                    src="./assets/images/Compare add.png"
-                    alt="Image"
-                  />
-                </div>
-                <div class="position_extra_icon">
-                  <img
-                    class="icon"
-                    src="./assets/images/ease.png"
-                    alt="Image"
-                  />
-                </div>
-              </div>
+              </a>
             </div>
             <div class="news_card_bottom">
               <p class="text_xl">Сумка шоппер стеганая</p>
@@ -303,49 +312,9 @@
               </ul>
               <div class="news_card_bottom_content">
                 <h3 class="news_card_price">3 400 ₽</h3>
-                <button class="text_xl cards_button">В корзину</button>
-              </div>
-            </div>
-          </article>
-          <article class="news_card">
-            <div class="news_card_top">
-              <p class="text_lg card_status_news">Новинка</p>
-              <div class="news_card_top_img">
-                <img src="./assets/images/news_card_4.png" alt="Image" />
-              </div>
-              <div class="position_extra_icons">
-                <div class="position_extra_icon">
-                  <img
-                    class="icon"
-                    src="./assets/images/Heart.png"
-                    alt="Image"
-                  />
-                </div>
-                <div class="position_extra_icon">
-                  <img
-                    class="icon"
-                    src="./assets/images/Compare add.png"
-                    alt="Image"
-                  />
-                </div>
-                <div class="position_extra_icon">
-                  <img
-                    class="icon"
-                    src="./assets/images/ease.png"
-                    alt="Image"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="news_card_bottom">
-              <p class="text_xl">Сумка шоппер стеганая</p>
-              <ul>
-                <li class="text_md stock_in">Есть в наличии</li>
-                <li class="text_md">Арт.: 3690</li>
-              </ul>
-              <div class="news_card_bottom_content">
-                <h3 class="news_card_price">3 400 ₽</h3>
-                <button class="text_xl cards_button">В корзину</button>
+                <button class="text_xl cards_button">
+                  <a href="./pages/card.html">Savatga</a>
+                </button>
               </div>
             </div>
           </article>
@@ -353,12 +322,13 @@
       </div>
     </section>
     <!-- News -->
+
     <section class="hits">
       <div class="container">
         <div class="section_top">
-          <h1>Хиты</h1>
-          <a class="section_top_link" href="#!">
-            <p class="text_lg">Все</p>
+          <h1>Trenddagilar</h1>
+          <a class="section_top_link" href="./pages/catalog.html">
+            <p class="text_lg">Barchasi</p>
             <img
               src="./assets/images/arrow-right-down.png"
               class="icon"
@@ -370,33 +340,15 @@
         <div class="news_cards">
           <article class="news_card">
             <div class="news_card_top">
-              <p class="text_lg card_status_hits">Хит</p>
-              <div class="news_card_top_img">
-                <img src="./assets/images/news_card_1.png" alt="Image" />
-              </div>
-              <div class="position_extra_icons">
-                <div class="position_extra_icon">
+              <a href="./pages/catalog.html">
+                <div class="news_card_top_img">
                   <img
-                    class="icon"
-                    src="./assets/images/Heart.png"
+                    class="card_image"
+                    src="./assets/images/Blender.png"
                     alt="Image"
                   />
                 </div>
-                <div class="position_extra_icon">
-                  <img
-                    class="icon"
-                    src="./assets/images/Compare add.png"
-                    alt="Image"
-                  />
-                </div>
-                <div class="position_extra_icon">
-                  <img
-                    class="icon"
-                    src="./assets/images/ease.png"
-                    alt="Image"
-                  />
-                </div>
-              </div>
+              </a>
             </div>
             <div class="news_card_bottom">
               <p class="text_xl">Сумка шоппер стеганая</p>
@@ -406,39 +358,24 @@
               </ul>
               <div class="news_card_bottom_content">
                 <h3 class="news_card_price">3 400 ₽</h3>
-                <button class="text_xl cards_button">В корзину</button>
+                <button class="text_xl cards_button">
+                  <a href="./pages/card.html">Savatga</a>
+                </button>
               </div>
             </div>
           </article>
+
           <article class="news_card">
             <div class="news_card_top">
-              <p class="text_lg card_status_hits">Хит</p>
-              <div class="news_card_top_img">
-                <img src="./assets/images/news_card_2.png" alt="Image" />
-              </div>
-              <div class="position_extra_icons">
-                <div class="position_extra_icon">
+              <a href="./pages/catalog.html">
+                <div class="news_card_top_img">
                   <img
-                    class="icon"
-                    src="./assets/images/Heart.png"
+                    class="card_image"
+                    src="./assets/images/Electric_Kettle.png"
                     alt="Image"
                   />
                 </div>
-                <div class="position_extra_icon">
-                  <img
-                    class="icon"
-                    src="./assets/images/Compare add.png"
-                    alt="Image"
-                  />
-                </div>
-                <div class="position_extra_icon">
-                  <img
-                    class="icon"
-                    src="./assets/images/ease.png"
-                    alt="Image"
-                  />
-                </div>
-              </div>
+              </a>
             </div>
             <div class="news_card_bottom">
               <p class="text_xl">Сумка шоппер стеганая</p>
@@ -448,39 +385,23 @@
               </ul>
               <div class="news_card_bottom_content">
                 <h3 class="news_card_price">3 400 ₽</h3>
-                <button class="text_xl cards_button">В корзину</button>
+                <button class="text_xl cards_button">
+                  <a href="./pages/card.html">Savatga</a>
+                </button>
               </div>
             </div>
           </article>
           <article class="news_card">
             <div class="news_card_top">
-              <p class="text_lg card_status_hits">Хит</p>
-              <div class="news_card_top_img">
-                <img src="./assets/images/news_card_3.png" alt="Image" />
-              </div>
-              <div class="position_extra_icons">
-                <div class="position_extra_icon">
+              <a href="./pages/catalog.html">
+                <div class="news_card_top_img">
                   <img
-                    class="icon"
-                    src="./assets/images/Heart.png"
+                    class="card_image"
+                    src="./assets/images/Toaster.png"
                     alt="Image"
                   />
                 </div>
-                <div class="position_extra_icon">
-                  <img
-                    class="icon"
-                    src="./assets/images/Compare add.png"
-                    alt="Image"
-                  />
-                </div>
-                <div class="position_extra_icon">
-                  <img
-                    class="icon"
-                    src="./assets/images/ease.png"
-                    alt="Image"
-                  />
-                </div>
-              </div>
+              </a>
             </div>
             <div class="news_card_bottom">
               <p class="text_xl">Сумка шоппер стеганая</p>
@@ -490,39 +411,23 @@
               </ul>
               <div class="news_card_bottom_content">
                 <h3 class="news_card_price">3 400 ₽</h3>
-                <button class="text_xl cards_button">В корзину</button>
+                <button class="text_xl cards_button">
+                  <a href="./pages/card.html">Savatga</a>
+                </button>
               </div>
             </div>
           </article>
           <article class="news_card">
             <div class="news_card_top">
-              <p class="text_lg card_status_hits">Хит</p>
-              <div class="news_card_top_img">
-                <img src="./assets/images/news_card_4.png" alt="Image" />
-              </div>
-              <div class="position_extra_icons">
-                <div class="position_extra_icon">
+              <a href="./pages/catalog.html">
+                <div class="news_card_top_img">
                   <img
-                    class="icon"
-                    src="./assets/images/Heart.png"
+                    class="card_image"
+                    src="./assets/images/Dishwasher.png"
                     alt="Image"
                   />
                 </div>
-                <div class="position_extra_icon">
-                  <img
-                    class="icon"
-                    src="./assets/images/Compare add.png"
-                    alt="Image"
-                  />
-                </div>
-                <div class="position_extra_icon">
-                  <img
-                    class="icon"
-                    src="./assets/images/ease.png"
-                    alt="Image"
-                  />
-                </div>
-              </div>
+              </a>
             </div>
             <div class="news_card_bottom">
               <p class="text_xl">Сумка шоппер стеганая</p>
@@ -532,7 +437,9 @@
               </ul>
               <div class="news_card_bottom_content">
                 <h3 class="news_card_price">3 400 ₽</h3>
-                <button class="text_xl cards_button">В корзину</button>
+                <button class="text_xl cards_button">
+                  <a href="./pages/card.html">Savatga</a>
+                </button>
               </div>
             </div>
           </article>
@@ -540,66 +447,35 @@
       </div>
     </section>
     <!-- Hits -->
-    <section class="live_our_brends">
-      <div class="container">
-        <div class="section_top">
-          <h1>Жизнь нашего бренда</h1>
-          <a class="section_top_link" href="#!">
-            <p class="text_lg">Все</p>
-            <img
-              src="./assets/images/arrow-right-down.png"
-              class="icon"
-              alt="Image"
-            />
-          </a>
-        </div>
-
-        <div class="live_our_brends_contents">
-          <div class="live_our_brends_content">
-            <img
-              class="live_our_brends_content_img"
-              src="./assets/images/live_our_brand.jpg"
-              alt="Image"
-            />
-          </div>
-          <div class="live_our_brends_content">
-            <img
-              class="live_our_brends_content_img"
-              src="./assets/images/live_our_brand.jpg"
-              alt="Image"
-            />
-          </div>
-          <div class="live_our_brends_content">
-            <img
-              class="live_our_brends_content_img"
-              src="./assets/images/live_our_brand.jpg"
-              alt="Image"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Live our brends -->
-
     <footer>
       <div class="footer_top">
         <div class="container">
           <div class="footer_top_content">
-            <h1>Tech House</h1>
+            <h1><a href="/">Tech House</a></h1>
             <div>
-              <p class="text_xl">+7 (499) 999-82-83</p>
-              <p class="text_xl">rostelecom.merc@rt.ru</p>
+              <p class="text_xl">+998 (99) 999-99-99</p>
+              <p class="text_xl">tech_house.house@gmail.com</p>
             </div>
             <div>
-              <p class="text_xl">vc.ru</p>
-              <p class="text_xl">habr.com</p>
+              <p class="text_xl">instagram.ru</p>
+              <p class="text_xl">house.com</p>
             </div>
             <div class="footer_top_content_buttons">
               <button>
-                <img src="./assets/images/tg.png" class="icon" alt="Image" />
+                <img
+                  class="card_image"
+                  src="./assets/images/tg.png"
+                  class="icon"
+                  alt="Image"
+                />
               </button>
               <button>
-                <img src="./assets/images/vk.png" class="icon" alt="Image" />
+                <img
+                  class="card_image"
+                  src="./assets/images/vk.png"
+                  class="icon"
+                  alt="Image"
+                />
               </button>
               <button>
                 <img
@@ -614,14 +490,20 @@
       </div>
       <div class="footer_bottom">
         <div class="container">
-          <div class="footer_bottom_content">
-            <p class="text_md">
-              © 2023 ПАО «Ростелеком» Все права защищены (18+)
-            </p>
-            <p class="text_md">Политика обработки данных</p>
-            <p class="text_md">Политика конфиденциальности</p>
-            <p class="text_md">Мобильная версия</p>
-          </div>
+          <ul class="footer_bottom_content">
+            <li class="text_md">
+              <a href="#!"> © 2023 000 Malumotlaringiz xafsiz </a>
+            </li>
+            <li class="text_md">
+              <a href="#!"> Politika tekshirish </a>
+            </li>
+            <li class="text_md">
+              <a href="#!"> Politika konfediritsiya </a>
+            </li>
+            <li class="text_md">
+              <a href="#!"> Kichik ekranlar uchun </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>

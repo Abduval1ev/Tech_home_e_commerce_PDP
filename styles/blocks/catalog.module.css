@@ -1,0 +1,16 @@
+section {
+    .filters {
+        display: flex;
+        justify-content: start;
+        gap: var(--gap-cards);
+        margin: var(--gap-cards) 0;
+
+        select {
+            width: 100%;
+            max-width: 300px;
+            padding: 10px;
+            border-radius: 12px;
+            background-color: var(--white);
+        }
+    }
+}
