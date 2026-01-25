@@ -93,6 +93,34 @@ body {
         display: flex;
     }
 
+    .mobile_menu {
+        display: none;
+        position: absolute;
+        bottom: 60px;
+        left: 10px;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 10px;
+        width: 200px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        list-style: none;
+    }
+
+    .mobile_menu li {
+        margin: 8px 0;
+    }
+
+    .mobile_menu li a {
+        text-decoration: none;
+        color: #222;
+        font-weight: 500;
+    }
+
+    .mobile_menu .show {
+        display: block;
+    }
+
     .menu_bar {
         position: absolute;
         width: 100%;
