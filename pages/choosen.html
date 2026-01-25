@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/main.css" />
-    <title>Card</title>
+    <title>Tanlanganlar</title>
   </head>
-  <body id="app">
+  <body class="choosen">
     <header>
       <nav class="nav_bar">
         <div class="container">
@@ -66,7 +66,7 @@
                   <a href="./home.html">Asosiy</a>
                 </li>
                 <li class="nav_link text_xl">
-                  <a href="./about.html">Biz haqimizda</a>
+                  <a href="">Biz haqimizda</a>
                 </li>
                 <li class="nav_link text_xl">
                   <a href="./catalog.html">Mahsulotlar</a>
@@ -87,13 +87,14 @@
           <div class="bottom_bar">
             <ul class="bottom_bar_items">
               <li class="bottom_bar_item">
-                <a class="text_lg" href="./home.html">
-                  <img class="icon" src="/assets/images/Home.png" alt="Images" />
+                <a class="text_lg" href="#">
+                  <img class="icon" src="./home.html" alt="Images" />
                   Asosiy
                 </a>
               </li>
 
               <li class="bottom_bar_item">
+                <span id="fav-count" class="cart-count">0</span>
                 <a class="text_lg" href="./choosen.html">
                   <img
                     class="icon"
@@ -129,42 +130,19 @@
       </nav>
     </header>
     <!-- Header -->
-    <section>
+
+    <section class="choosen">
       <div class="container">
-        <div class="card">
-          <h1>Savat</h1>
-          <div class="card_contents">
-            <div id="cartContainer" class="news_cards"></div>
-            <div class="choosed_order_confirm">
-              <div class="choosed_order_confirm_top">
-                <div class="choosed_order_confirm_first text_lg">
-                  <p>ta buyurtma summasi:</p>
-                  <span>2.300.000som</span>
-                </div>
-                <div class="choosed_order_confirm_first text_lg">
-                  <p>Chegirma summasi:</p>
-                  <span>2.000.000 som</span>
-                </div>
-              </div>
-              <hr />
-              <div class="choosed_order_confirm_bottom">
-                <h3>Barcha summa:</h3>
-                <h2>2.000.000 som</h2>
-                <button class="second_btn text_lg">
-                  <a href="./checkout.html">Buyurtma berish</a>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+        <h1>Tanlanganlar</h1>
+        <div id="favContainer" class="news_cards"></div>
       </div>
     </section>
-    <!-- Card -->
+
     <footer>
       <div class="footer_top">
         <div class="container">
           <div class="footer_top_content">
-            <h1>Tech House</h1>
+            <h1><a href="/">Tech House</a></h1>
             <div>
               <p class="text_xl">+998 (99) 999-99-99</p>
               <p class="text_xl">tech_house.house@gmail.com</p>
@@ -203,15 +181,24 @@
       </div>
       <div class="footer_bottom">
         <div class="container">
-          <div class="footer_bottom_content">
-            <p class="text_md">© 2023 ПАО Все права защищены</p>
-            <p class="text_md">Политика обработки данных</p>
-            <p class="text_md">Политика конфиденциальности</p>
-            <p class="text_md">Мобильная версия</p>
-          </div>
+          <ul class="footer_bottom_content">
+            <li class="text_md">
+              <a href="#!"> © 2023 000 Malumotlaringiz xafsiz </a>
+            </li>
+            <li class="text_md">
+              <a href="#!"> Politika tekshirish </a>
+            </li>
+            <li class="text_md">
+              <a href="#!"> Politika konfediritsiya </a>
+            </li>
+            <li class="text_md">
+              <a href="#!"> Kichik ekranlar uchun </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
-    <script type="module" src="/scripts/pages/card.js"></script>
+    <!-- Footer -->
+    <script type="module" src="/scripts/pages/choosenPage.js"></script>
   </body>
 </html>

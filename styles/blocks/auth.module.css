@@ -1,0 +1,32 @@
+.auth-box {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    margin: 20% auto;
+
+    .auth-tabs {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+
+        button {
+            margin: 0 auto;
+            color: var(--active-menu-dark-blue);
+        }
+    }
+
+    .loginForm {
+        input {
+            padding: var(--space-text-y);
+            background: var(--base-light);
+        }
+    }
+
+    .login {
+        color: var(--active-menu-dark-blue);
+    }
+
+}

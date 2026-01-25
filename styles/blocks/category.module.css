@@ -13,16 +13,29 @@
             grid-template-columns: 1fr;
         }
 
-        .category_item {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            transition: ease 0.3s;
-            cursor: pointer;
+        .category_content {
+            display: flex;
+            justify-content: flex-start !important;
+            align-items: center;
+            gap: 20px;
+            border-radius: var(--gap-cards);
+            padding: var(--gap-cards);
+            transition: all 0.2s;
 
             &:hover {
-                opacity: 40%;
-                transition: ease 0.2s;
+                background-color: var(--base-grey);
+                transition: all 0.1s;
+            }
+
+            .category_item {
+                max-width: 80px;
+                height: auto;
+                cursor: pointer;
+                transition: ease 0.3s;
+
+                &:hover {
+                    transition: ease 0.2s;
+                }
             }
         }
     }

@@ -24,9 +24,11 @@
     --dark-background: #333A47;
     --dark-bg-background: #2A323F;
     /* Colors */
+    --width-map-frame: clamp(37.5rem, 32.353rem + 19.61vw, 50rem);
     --container-x: clamp(1rem, -2.833rem + 12.78vw, 12.5rem);
     --space-section-title-y: clamp(0.75rem, 0.167rem + 1.94vw, 2.5rem);
     --space-section-y: clamp(4rem, 3.667rem + 1.11vw, 5rem);
+    --space-text-y: clamp(0.5rem, 0.397rem + 0.39vw, 0.75rem);
     /* Padding */
     --gap-cards: clamp(0.625rem, 0.167rem + 1.53vw, 2rem);
 }

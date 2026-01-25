@@ -6,7 +6,9 @@
 @import "./base/vars.css";
 /* Base */
 
+@import "./blocks/auth.module.css";
 @import "./blocks/header.module.css";
+@import "./blocks/hero.module.css";
 @import "./blocks/main.module.css";
 @import "./blocks/footer.module.css";
 @import "./blocks/category.module.css";
@@ -15,3 +17,16 @@
 @import "./blocks/catalog.module.css";
 @import "./blocks/card_details.module.css";
 @import "./blocks/card.module.css";
+@import "./blocks/contacts.module.css";
+@import "./blocks/profile.module.css";
+@import "./blocks/fillials.module.css";
+@import "./blocks/about.module.css";
+@import "./blocks/seasonal_products.module.css";
+@import "./blocks/sale_products.module.css";
+@import "./blocks/services.module.css";
+@import "./blocks/testimonial.module.css";
+@import "./blocks/faq.module.css";
+@import "./blocks/location.module.css";
+@import "./blocks/choosen.module.css";
+@import "./blocks/checkout.module.css";
+@import "./blocks/product_details.module.css";

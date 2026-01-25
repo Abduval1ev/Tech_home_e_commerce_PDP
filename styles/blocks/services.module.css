@@ -1,0 +1,34 @@
+.section-title {
+    font-size: 32px;
+}
+
+.section-subtitle {
+    color: #666;
+    font-size: 16px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-text-y);
+    margin: var(--space-text-y) 0;
+}
+
+.service-card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    cursor: pointer;    
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.icon_ser {
+    height: auto;
+    margin: var(--space-text-y) 0;
+}

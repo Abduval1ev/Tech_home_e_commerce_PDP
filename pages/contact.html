@@ -1,66 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/main.css" />
-    <script src="./scripts/index.js" defer></script>
+    <link rel="stylesheet" href="/styles/main.css" />
     <title>Kontakt</title>
   </head>
-  <body>
+  <body id="app">
     <header>
       <nav class="nav_bar">
         <div class="container">
           <div class="navbar">
-            <div class="nav_logo">
-              <a href="/">
-                <h1>Tech House</h1>
-              </a>
+            <div class="nav_top">
+              <div class="nav_logo">
+                <a href="./home.html">
+                  <h1>Tech <span>House</span></h1>
+                </a>
+              </div>
+              <div class="search_label">
+                <input placeholder="Qidiruv" class="text_xl" type="text" />
+                <img class="icon" src="/assets/images/Search.png" alt="Image" />
+              </div>
+              <ul class="nav_extra_items">
+                <li class="nav_extra_item text_lg">
+                  <span id="fav-count" class="cart-count">0</span>
+                  <a href="./choosen.html">
+                    <img
+                      class="icon"
+                      src="/assets/images/Heart.png"
+                      alt="Image"
+                    />
+                  </a>
+                  Tanlangan
+                </li>
+                <li class="nav_extra_item text_lg">
+                  <span id="cart-count" class="cart-count">0</span>
+                  <a href="/pages/card.html">
+                    <img
+                      class="icon"
+                      src="/assets/images/Cart.png"
+                      alt="Image"
+                    />
+                  </a>
+                  Savat
+                </li>
+                <li class="nav_extra_item text_lg">
+                  <a href="/pages/profile.html">
+                    <img
+                      class="icon"
+                      src="/assets/images/user.png"
+                      alt="Image"
+                    />
+                  </a>
+                  Profile
+                </li>
+              </ul>
             </div>
-            <ul class="nav_extra_items">
-              <li class="nav_link text_xl">
-                <a href="/">Asosiy</a>
-              </li>
-              <li class="nav_link text_xl">
-                <a href="./about.html">Biz haqimizda</a>
-              </li>
-              <li class="nav_link text_xl">
-                <a href="./products.html">Mahsulotlar</a>
-              </li>
-              <li class="nav_link text_xl">
-                <a href="./fillials.html">Filialar</a>
-              </li>
-              <li class="nav_link text_xl">
-                <a href="#!">Kontakt</a>
-              </li>
-              <li class="nav_extra_items">
-                <a href="#">
-                  <img
-                    class="icon"
-                    src="../assets/images/Search.png"
-                    alt="Image"
-                  />
-                </a>
-              </li>
-              <li class="nav_extra_items">
-                <a href="#">
-                  <img
-                    class="icon"
-                    src="../assets/images/Heart.png"
-                    alt="Image"
-                  />
-                </a>
-              </li>
-              <li class="nav_extra_items">
-                <a href="#">
-                  <img
-                    class="icon"
-                    src="../assets/images/Cart.png"
-                    alt="Image"
-                  />
-                </a>
-              </li>
-            </ul>
+            <div class="nav_bottom">
+              <ul class="nav_bottom_links">
+                <li class="nav_link text_xl">
+                  <a href="./home.html">Asosiy</a>
+                </li>
+                <li class="nav_link text_xl">
+                  <a href="./about.html">Biz haqimizda</a>
+                </li>
+                <li class="nav_link text_xl">
+                  <a href="./catalog.html">Mahsulotlar</a>
+                </li>
+                <li class="nav_link text_xl">
+                  <a href="./fillials.html">Filialar</a>
+                </li>
+                <li class="nav_link text_xl">
+                  <a href="">Kontakt</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
@@ -69,10 +83,10 @@
           <div class="bottom_bar">
             <ul class="bottom_bar_items">
               <li class="bottom_bar_item">
-                <a class="text_lg" href="#">
+                <a class="text_lg" href="./home.html">
                   <img
                     class="icon"
-                    src="./assets/images/Home.png"
+                    src="/assets/images/Home.png"
                     alt="Images"
                   />
                   Asosiy
@@ -80,10 +94,10 @@
               </li>
 
               <li class="bottom_bar_item">
-                <a class="text_lg" href="#">
+                <a class="text_lg" href="./choosen.html">
                   <img
                     class="icon"
-                    src="../assets/images/Heart.png"
+                    src="/assets/images/Heart.png"
                     alt="Images"
                   />
                   Tanlanganar
@@ -93,7 +107,7 @@
                 <a class="text_lg" href="#">
                   <img
                     class="icon"
-                    src="../assets/images/Cart.png"
+                    src="/assets/images/Cart.png"
                     alt="Images"
                   />
                   Savat
@@ -103,7 +117,7 @@
                 <a class="text_lg" href="#">
                   <img
                     class="icon"
-                    src="../assets/images/More.png"
+                    src="/assets/images/More.png"
                     alt="Images"
                   />
                   Kengroq
@@ -115,6 +129,39 @@
       </nav>
     </header>
     <!-- Header -->
+    <section>
+      <div class="container">
+        <h1>Biz bilan aloqaga chiqish</h1>
+
+        <form class="text_lg">
+          <div class="double">
+            <div class="form_block">
+              <label>Ism:</label>
+              <input type="text" />
+            </div>
+            <div class="form_block">
+              <label>Famila:</label>
+              <input type="text" />
+            </div>
+          </div>
+          <div class="form_block">
+            <label>Email:</label>
+            <input type="email" />
+          </div>
+          <div class="form_block">
+            <label>Telefon raqam:</label>
+            <input type="tel" />
+          </div>
+          <div class="form_block">
+            <label>Xabar qoldiring:</label>
+            <textarea placeholder="Xabar qoldiring..."></textarea>
+          </div>
+        </form>
+        <button class="text_lg second_button">
+          Yuborish
+        </button>
+      </div>
+    </section>
 
     <footer>
       <div class="footer_top">
@@ -133,7 +180,7 @@
               <button>
                 <img
                   class="card_image"
-                  src="../assets/images/tg.png"
+                  src="/assets/images/tg.png"
                   class="icon"
                   alt="Image"
                 />
@@ -141,14 +188,14 @@
               <button>
                 <img
                   class="card_image"
-                  src="../assets/images/vk.png"
+                  src="/assets/images/vk.png"
                   class="icon"
                   alt="Image"
                 />
               </button>
               <button>
                 <img
-                  src="../assets/images/youtube.png"
+                  src="/assets/images/youtube.png"
                   class="icon"
                   alt="Image"
                 />
@@ -177,5 +224,6 @@
       </div>
     </footer>
     <!-- Footer -->
+    <script type="module" src="/scripts/index.js"></script>
   </body>
 </html>

@@ -1,7 +1,6 @@
 footer {
-    position: static;
-    width: 100%;
     bottom: 0;
+    width: 100%;
     color: var(--white);
     background-color: var(--active-menu-dark-blue);
 

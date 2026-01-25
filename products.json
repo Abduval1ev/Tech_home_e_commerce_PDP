@@ -1,0 +1,128 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Ali",
+      "email": "ali@example.com",
+      "password": "123456"
+    },
+    {
+      "id": 2,
+      "name": "Vali",
+      "email": "vali@example.com",
+      "password": "abcdef"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Blender X200",
+      "price": 120,
+      "category": "Oshxona",
+      "brand": "Artel",
+      "stock": 15,
+      "description": "Kuchli 1000W blender. 5 xil tezlik rejimi mavjud.",
+      "image": "Blender.png"
+    },
+    {
+      "id": 2,
+      "title": "Elektron choynak Pro",
+      "price": 80,
+      "category": "Oshxona",
+      "brand": "Samsung",
+      "stock": 20,
+      "description": "Kuchli 1000W blender. 5 xil tezlik rejimi mavjud.",
+      "image": "Electric_Kettle.png"
+    },
+    {
+      "id": 3,
+      "title": "Kir yuvish mashinasi 7kg",
+      "price": 450,
+      "category": "Maishiy texnika",
+      "brand": "LG",
+      "stock": 5,
+      "description": "Kuchli 1000W blender. 5 xil tezlik rejimi mavjud.",
+      "image": "Washing_Machine.png"
+    },
+    {
+      "id": 4,
+      "title": "Mikroto‘lqinli pech",
+      "price": 300,
+      "category": "Oshxona",
+      "brand": "Bosch",
+      "stock": 10,
+      "description": "Kuchli 1000W blender. 5 xil tezlik rejimi mavjud.",
+      "image": "microwave.png"
+    },
+    {
+      "id": 5,
+      "title": "Konditsioner 12B",
+      "price": 600,
+      "category": "Iqlim texnikasi",
+      "brand": "Artel",
+      "stock": 8,
+      "description": "Kuchli 1000W blender. 5 xil tezlik rejimi mavjud.",
+      "image": "airconditioner.png"
+    },
+    {
+      "id": 6,
+      "title": "Ventilyator Mini",
+      "price": 150,
+      "category": "Iqlim texnikasi",
+      "brand": "Shivaki",
+      "stock": 0,
+      "description": "Kuchli 1000W blender. 5 xil tezlik rejimi mavjud.",
+      "image": "Fan.png"
+    },
+    {
+      "id": 7,
+      "title": "Mikroto‘lqinli pech",
+      "price": 300,
+      "category": "Oshxona",
+      "brand": "Bosch",
+      "stock": 10,
+      "description": "Kuchli 1000W blender. 5 xil tezlik rejimi mavjud.",
+      "image": "microwave.png"
+    },
+    {
+      "id": 8,
+      "title": "Konditsioner 12B",
+      "price": 600,
+      "category": "Iqlim texnikasi",
+      "brand": "Artel",
+      "stock": 8,
+      "description": "Kuchli 1000W blender. 5 xil tezlik rejimi mavjud.",
+      "image": "airconditioner.png"
+    },
+    {
+      "id": 9,
+      "title": "Ventilyator Mini",
+      "price": 150,
+      "category": "Iqlim texnikasi",
+      "brand": "Shivaki",
+      "stock": 0,
+      "description": "Kuchli 1000W blender. 5 xil tezlik rejimi mavjud.",
+      "image": "Fan.png"
+    },
+    {
+      "id": 10,
+      "title": "Ventilyator Mini",
+      "price": 150,
+      "category": "Iqlim texnikasi",
+      "brand": "Shivaki",
+      "stock": 0,
+      "description": "Kuchli 1000W blender. 5 xil tezlik rejimi mavjud.",
+      "image": "Fan.png"
+    },
+    {
+      "id": 11,
+      "title": "Ventilyator Mini",
+      "price": 150,
+      "category": "Iqlim texnikasi",
+      "brand": "Shivaki",
+      "stock": 0,
+      "description": "Kuchli 1000W blender. 5 xil tezlik rejimi mavjud.",
+      "image": "Fan.png"
+    }
+  ]
+}

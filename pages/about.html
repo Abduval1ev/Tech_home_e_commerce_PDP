@@ -1,66 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/main.css" />
-    <script src="./scripts/index.js" defer></script>
+    <link rel="stylesheet" href="/styles/main.css" />
     <title>Biz Haqimizda</title>
   </head>
-  <body>
+  <body id="app">
     <header>
       <nav class="nav_bar">
         <div class="container">
           <div class="navbar">
-            <div class="nav_logo">
-              <a href="/">
-                <h1>Tech House</h1>
-              </a>
+            <div class="nav_top">
+              <div class="nav_logo">
+                <a href="./home.html">
+                  <h1>Tech <span>House</span></h1>
+                </a>
+              </div>
+              <div class="search_label">
+                <input placeholder="Qidiruv" class="text_xl" type="text" />
+                <img class="icon" src="/assets/images/Search.png" alt="Image" />
+              </div>
+              <ul class="nav_extra_items">
+                <li class="nav_extra_item text_lg">
+                  <span id="fav-count" class="cart-count">0</span>
+                  <a href="./choosen.html">
+                    <img
+                      class="icon"
+                      src="/assets/images/Heart.png"
+                      alt="Image"
+                    />
+                  </a>
+                  Tanlangan
+                </li>
+                <li class="nav_extra_item text_lg">
+                  <span id="cart-count" class="cart-count">0</span>
+                  <a href="/pages/card.html">
+                    <img
+                      class="icon"
+                      src="/assets/images/Cart.png"
+                      alt="Image"
+                    />
+                  </a>
+                  Savat
+                </li>
+                <li class="nav_extra_item text_lg">
+                  <a href="/pages/profile.html">
+                    <img
+                      class="icon"
+                      src="/assets/images/user.png"
+                      alt="Image"
+                    />
+                  </a>
+                  Profile
+                </li>
+              </ul>
             </div>
-            <ul class="nav_extra_items">
-              <li class="nav_link text_xl">
-                <a href="/">Asosiy</a>
-              </li>
-              <li class="nav_link text_xl">
-                <a href="#!">Biz haqimizda</a>
-              </li>
-              <li class="nav_link text_xl">
-                <a href="./products.html">Mahsulotlar</a>
-              </li>
-              <li class="nav_link text_xl">
-                <a href="./fillials.html">Filialar</a>
-              </li>
-              <li class="nav_link text_xl">
-                <a href="./contact.html">Kontakt</a>
-              </li>
-              <li class="nav_extra_items">
-                <a href="#">
-                  <img
-                    class="icon"
-                    src="../assets/images/Search.png"
-                    alt="Image"
-                  />
-                </a>
-              </li>
-              <li class="nav_extra_items">
-                <a href="#">
-                  <img
-                    class="icon"
-                    src="../assets/images/Heart.png"
-                    alt="Image"
-                  />
-                </a>
-              </li>
-              <li class="nav_extra_items">
-                <a href="#">
-                  <img
-                    class="icon"
-                    src="../assets/images/Cart.png"
-                    alt="Image"
-                  />
-                </a>
-              </li>
-            </ul>
+            <div class="nav_bottom">
+              <ul class="nav_bottom_links">
+                <li class="nav_link text_xl">
+                  <a href="./home.html">Asosiy</a>
+                </li>
+                <li class="nav_link text_xl">
+                  <a href="">Biz haqimizda</a>
+                </li>
+                <li class="nav_link text_xl">
+                  <a href="./catalog.html">Mahsulotlar</a>
+                </li>
+                <li class="nav_link text_xl">
+                  <a href="./fillials.html">Filialar</a>
+                </li>
+                <li class="nav_link text_xl">
+                  <a href="./contact.html">Kontakt</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
@@ -70,20 +84,16 @@
             <ul class="bottom_bar_items">
               <li class="bottom_bar_item">
                 <a class="text_lg" href="#">
-                  <img
-                    class="icon"
-                    src="../assets/images/Home.png"
-                    alt="Images"
-                  />
+                  <img class="icon" src="./home.html" alt="Images" />
                   Asosiy
                 </a>
               </li>
 
               <li class="bottom_bar_item">
-                <a class="text_lg" href="#">
+                <a class="text_lg" href="./choosen.html">
                   <img
                     class="icon"
-                    src="../assets/images/Heart.png"
+                    src="/assets/images/Heart.png"
                     alt="Images"
                   />
                   Tanlanganar
@@ -93,7 +103,7 @@
                 <a class="text_lg" href="#">
                   <img
                     class="icon"
-                    src="../assets/images/Cart.png"
+                    src="/assets/images/Cart.png"
                     alt="Images"
                   />
                   Savat
@@ -103,7 +113,7 @@
                 <a class="text_lg" href="#">
                   <img
                     class="icon"
-                    src="../assets/images/More.png"
+                    src="/assets/images/More.png"
                     alt="Images"
                   />
                   Kengroq
@@ -115,6 +125,108 @@
       </nav>
     </header>
     <!-- Header -->
+
+    <section class="about text_xl">
+      <div class="container">
+        <h1>Biz haqimizda</h1>
+        <div class="about_content">
+          <div>
+            <h2>TechHouse — texnologiya, sifat va ishonch manzili</h2>
+            <p>
+              TechHouse — zamonaviy texnologiyalarni ishonchli, sifatli va qulay
+              tarzda taqdim etishga ixtisoslashgan e-commerce platforma. Biz
+              mijozlarimizga faqat mahsulot emas, balki ishonchli tajriba,
+              professional xizmat va uzoq muddatli hamkorlikni taklif qilamiz.
+            </p>
+          </div>
+          <img
+            src="/assets/images/techhouse_about-removebg-preview.png"
+            alt="Image"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <h1>Biz kimmiz?</h1>
+        <p>
+          TechHouse elektronika va texnologik mahsulotlar savdosi bilan
+          shug‘ullanuvchi kompaniya bo‘lib, mijozlar ehtiyojini chuqur
+          tushunishga va unga mos yechimlar berishga intiladi. Biz uchun har bir
+          xaridor muhim va har bir buyurtma mas’uliyat bilan bajariladi. Biz
+          original mahsulotlar, adolatli narxlar va ochiq xizmat siyosatini
+          asosiy tamoyil sifatida tanlaganmiz. TechHouse — bu texnologiyani
+          murakkabliksiz va ishonch bilan tanlash imkoniyati.
+        </p>
+      </div>
+    </section>
+
+    <section class="about text_xl">
+      <div class="container">
+        <h1>Bizning missiyamiz</h1>
+        <div class="our_missions">
+          <div class="our_mission">
+            <h2>Sifat</h2>
+            <p>
+              Biz faqat tekshirilgan, original va kafolatlangan mahsulotlarni
+              taklif qilamiz.
+            </p>
+          </div>
+          <div class="our_mission">
+            <h2>Ishonch</h2>
+            <p>
+              Ochiqlik, halollik va mas’uliyat — bizning ish uslubimizning
+              asosi.
+            </p>
+          </div>
+          <div class="our_mission">
+            <h2>Mijozga yo‘naltirilganlik</h2>
+            <p>Har bir mijozning ehtiyoji va savoli biz uchun ustuvor.</p>
+          </div>
+          <div class="our_mission">
+            <h2>Innovatsiya</h2>
+            <p>
+              Texnologiyadagi yangiliklarni kuzatib boramiz va zamonaviy
+              yechimlarni joriy qilamiz.
+            </p>
+          </div>
+          <div class="our_mission">
+            <h2>Mas’uliyat</h2>
+            <p>
+              Sotuvdan keyingi xizmat, kafolat va qo‘llab-quvvatlash biz uchun
+              muhim.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h1>Bizning jamoamiz</h1>
+        <p>TechHouse’da xarid qilgan har bir mijoz:</p>
+        <ol>
+          <li>rasmiy kafolat</li>
+          <li>aniq shartlar</li>
+          <li>ochiq siyosat</li>
+          <li>va sotuvdan keyingi qo‘llab-quvvatlashga ega bo‘ladi</li>
+          <p>
+            Biz uzoq muddatli ishonchni bir martalik foydadan ustun qo‘yamiz.
+          </p>
+        </ol>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h1>TechHouse bilan birga bo‘ling</h1>
+        <p>
+          TechHouse — bu texnologiyani ishonch bilan tanlash, sifatni his qilish
+          va professional xizmatdan foydalanish imkoniyati. Biz siz uchun
+          ishlaymiz va sizning ishonchingizni qadrlaymiz.
+        </p>
+      </div>
+    </section>
 
     <footer>
       <div class="footer_top">
@@ -133,7 +245,7 @@
               <button>
                 <img
                   class="card_image"
-                  src="../assets/images/tg.png"
+                  src="/assets/images/tg.png"
                   class="icon"
                   alt="Image"
                 />
@@ -141,14 +253,14 @@
               <button>
                 <img
                   class="card_image"
-                  src="../assets/images/vk.png"
+                  src="/assets/images/vk.png"
                   class="icon"
                   alt="Image"
                 />
               </button>
               <button>
                 <img
-                  src="../assets/images/youtube.png"
+                  src="/assets/images/youtube.png"
                   class="icon"
                   alt="Image"
                 />

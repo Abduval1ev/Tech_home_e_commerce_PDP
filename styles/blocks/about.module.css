@@ -1,0 +1,42 @@
+.about {
+    h1 {
+        margin: var(--space-text-y) 0;
+    }
+
+    p {
+        margin: var(--space-text-y) 0;
+
+    }
+
+    ol {
+        margin: var(--space-text-y) 0;
+    }
+
+    .about_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: var(--space-text-y);
+
+        @media screen and (max-width: 1200px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    .our_missions {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--gap-cards);
+
+        @media screen and (max-width: 800px) {
+            grid-template-columns: 1fr;
+        }
+
+        .our_mission {
+            padding: var(--space-text-y);
+            border-radius: var(--gap-cards);
+            background-color: var(--white);
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.product_details {
+    display: flex;
+
+    .product_detail_con {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-text-y);
+    }
+}

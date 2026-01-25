@@ -1,16 +1,72 @@
 section {
-    .filters {
-        display: flex;
-        justify-content: start;
-        gap: var(--gap-cards);
-        margin: var(--gap-cards) 0;
+    h1 {
+        margin-bottom: var(--gap-cards);
+    }
 
-        select {
+    .products_content {
+        display: flex;
+        justify-content: space-between;
+        gap: var(--gap-cards);
+
+        @media screen and (max-width: 990px) {
+            display: block;
+
+        }
+
+        .mobile_filters {
+            display: none;
+
+            @media screen and (max-width: 990px) {
+                display: flex;
+                /* flex-direction: column; */
+                gap: var(--gap-cards);
+
+                width: 100%;
+                border-radius: var(--space-text-y);
+                padding: var(--space-text-y);
+
+                .select_pro {
+                    background: var(--base-light);
+                    border-radius: 6px;
+                }
+
+                .pro_search {
+                    padding: var(--space-text-y);
+                    background: var(--base-light);
+                    border-radius: 6px;
+                }
+            }
+        }
+
+        #filters {
+            position: sticky;
+            top: 120px;
+            display: flex;
+            flex-direction: column;
+            gap: var(--gap-cards);
+            height: 500px;
+
+
             width: 100%;
-            max-width: 300px;
-            padding: 10px;
-            border-radius: 12px;
-            background-color: var(--white);
+            max-width: 400px;
+            background: var(--white);
+            border-radius: var(--space-text-y);
+            padding: var(--space-text-y);
+
+            @media screen and (max-width: 990px) {
+                display: none;
+            }
+
+            .select_pro {
+                background: var(--base-light);
+                border-radius: 6px;
+            }
+
+            .pro_search {
+                padding: var(--space-text-y);
+                background: var(--base-light);
+                border-radius: 6px;
+            }
         }
     }
 }

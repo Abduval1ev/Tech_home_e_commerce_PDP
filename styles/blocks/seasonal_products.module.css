@@ -1,0 +1,56 @@
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--gap-cards);
+    margin: var(--space-text-y) 0;
+
+    @media screen and (max-width: 1200px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .news_card {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        color: var(--active-menu-dark-blue);
+        width: 100%;
+        max-width: 500px;
+        cursor: pointer;
+        padding: 24px 16px;
+        transition: all 0.2s;
+
+
+        &:hover {
+            background-color: var(--base-grey);
+            transition: all 0.1s;
+
+        }
+
+        .news_card_top {
+            margin: auto 0;
+
+            .news_card_top_img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 0 20px;
+            }
+        }
+    }
+
+    .product img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .product h3 {
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+    }
+
+    .product p {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}

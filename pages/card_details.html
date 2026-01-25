@@ -1,76 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/main.css" />
-    <script src="./scripts/index.js" defer></script>
     <title>Card Details</title>
   </head>
-  <body>
-    <nav class="nav_bar">
-      <div class="container">
-        <div class="navbar">
-          <div class="nav_logo">
-            <a href="/">
-              <h1>Tech House</h1>
-            </a>
+  <body id="app">
+    <header>
+      <nav class="nav_bar">
+        <div class="container">
+          <div class="navbar">
+            <div class="nav_top">
+              <div class="nav_logo">
+                <a href="./jome.html">
+                  <h1>Tech <span>House</span></h1>
+                </a>
+              </div>
+              <div class="search_label">
+                <input
+                  placeholder="Qidiruv"
+                  class="text_xl"
+                  type="text"
+                />
+                <img class="icon" src="/assets/images/Search.png" alt="Image" />
+              </div>
+              <ul class="nav_extra_items">
+                <li class="nav_extra_item text_lg">
+                  <span id="fav-count" class="cart-count">0</span>
+                  <a href="./choosen.html">
+                    <img
+                      class="icon"
+                      src="/assets/images/Heart.png"
+                      alt="Image"
+                    />
+                  </a>
+                  Tanlangan
+                </li>
+                <li class="nav_extra_item text_lg">
+                  <span id="cart-count" class="cart-count">0</span>
+                  <a href="/pages/card.html">
+                    <img
+                      class="icon"
+                      src="/assets/images/Cart.png"
+                      alt="Image"
+                    />
+                  </a>
+                  Savat
+                </li>
+                <li class="nav_extra_item text_lg">
+                  <a href="/pages/profile.html">
+                    <img
+                      class="icon"
+                      src="/assets/images/user.png"
+                      alt="Image"
+                    />
+                  </a>
+                  Profile
+                </li>
+              </ul>
+            </div>
+            <div class="nav_bottom">
+              <ul class="nav_bottom_links">
+                <li class="nav_link text_xl">
+                  <a href="./home.html">Asosiy</a>
+                </li>
+                <li class="nav_link text_xl">
+                  <a href="./about.html">Biz haqimizda</a>
+                </li>
+                <li class="nav_link text_xl">
+                  <a href="./catalog.html">Mahsulotlar</a>
+                </li>
+                <li class="nav_link text_xl">
+                  <a href="./fillials.html">Filialar</a>
+                </li>
+                <li class="nav_link text_xl">
+                  <a href="./contact.html">Kontakt</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <ul class="nav_extra_items">
-            <li class="nav_link text_xl">
-              <a href="/">Asosiy</a>
-            </li>
-            <li class="nav_link text_xl">
-              <a href="./about.html">Biz haqimizda</a>
-            </li>
-            <li class="nav_link text_xl">
-              <a href="./products.html">Mahsulotlar</a>
-            </li>
-            <li class="nav_link text_xl">
-              <a href="./fillials.html">Filialar</a>
-            </li>
-            <li class="nav_link text_xl">
-              <a href="./contact.html">Kontakt</a>
-            </li>
-            <li class="nav_extra_items">
-              <a href="#">
-                <img
-                  class="icon"
-                  src="../assets/images/Search.png"
-                  alt="Image"
-                />
-              </a>
-            </li>
-            <li class="nav_extra_items">
-              <a href="#">
-                <img
-                  class="icon"
-                  src="../assets/images/Heart.png"
-                  alt="Image"
-                />
-              </a>
-            </li>
-            <li class="nav_extra_items">
-              <a href="#">
-                <img class="icon" src="../assets/images/Cart.png" alt="Image" />
-              </a>
-            </li>
-          </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
+      <nav class="bottom_bar_bottom">
+        <div class="container">
+          <div class="bottom_bar">
+            <ul class="bottom_bar_items">
+              <li class="bottom_bar_item">
+                <a class="text_lg" href="./home.html">
+                  <img
+                    class="icon"
+                    src="/assets/images/Home.png"
+                    alt="Images"
+                  />
+                  Asosiy
+                </a>
+              </li>
+
+              <li class="bottom_bar_item">
+                <a class="text_lg" href="./choosen.html">
+                  <img
+                    class="icon"
+                    src="/assets/images/Heart.png"
+                    alt="Images"
+                  />
+                  Tanlanganar
+                </a>
+              </li>
+              <li class="bottom_bar_item">
+                <a class="text_lg" href="#">
+                  <img
+                    class="icon"
+                    src="/assets/images/Cart.png"
+                    alt="Images"
+                  />
+                  Savat
+                </a>
+              </li>
+              <li class="bottom_bar_item" id="nav_menu">
+                <a class="text_lg" href="#">
+                  <img
+                    class="icon"
+                    src="/assets/images/More.png"
+                    alt="Images"
+                  />
+                  Kengroq
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header -->
     <section>
       <div class="container">
         <div class="card_details">
           <div class="card_details_left">
             <img
               class="card_details_left_image"
-              src="../assets/images/airconditions.jpg"
+              src="/assets/images/airconditions.jpg"
               alt="Image"
             />
             <img
               class="card_details_left_image second_img"
-              src="../assets/images/airconditions.jpg"
+              src="/assets/images/airconditions.jpg"
               alt="Image"
             />
           </div>
@@ -79,8 +153,7 @@
               <h1>Blender</h1>
               <p>2 300 ₽</p>
               <ul>
-                <li class="text_md stock_in">Есть в наличии</li>
-                <li class="text_md">Арт.: 3690</li>
+                <li class="text_md stock_in">Mavjud emas</li>
               </ul>
               <div class="quantity">
                 <button class="counter_button text_lg">
@@ -90,7 +163,7 @@
                 </button>
                 <a href="#!">
                   <button class="second_button text_lg">
-                    <a href="../pages/card.html">Savatga</a>
+                    <a>Savatga</a>
                   </button>
                 </a>
               </div>
@@ -127,7 +200,7 @@
               <button>
                 <img
                   class="card_image"
-                  src="../assets/images/tg.png"
+                  src="/assets/images/tg.png"
                   class="icon"
                   alt="Image"
                 />
@@ -135,14 +208,14 @@
               <button>
                 <img
                   class="card_image"
-                  src="../assets/images/vk.png"
+                  src="/assets/images/vk.png"
                   class="icon"
                   alt="Image"
                 />
               </button>
               <button>
                 <img
-                  src="../assets/images/youtube.png"
+                  src="/assets/images/youtube.png"
                   class="icon"
                   alt="Image"
                 />
@@ -162,5 +235,6 @@
         </div>
       </div>
     </footer>
+    <script type="module" src="/scripts/pages/productDetails.js"></script>
   </body>
 </html>

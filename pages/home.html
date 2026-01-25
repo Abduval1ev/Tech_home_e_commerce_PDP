@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <title>Tech House</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav_bar">
+        <div class="container">
+          <div class="navbar">
+            <div class="nav_top">
+              <div class="nav_logo">
+                <a href="./home.html">
+                  <h1>Tech <span>House</span></h1>
+                </a>
+              </div>
+              <div class="search_label">
+                <input placeholder="Qidiruv" class="text_xl" type="text" />
+                <img class="icon" src="/assets/images/Search.png" alt="Image" />
+              </div>
+              <ul class="nav_extra_items">
+                <li class="nav_extra_item text_lg">
+                  <span id="fav-count" class="cart-count">0</span>
+                  <a href="./choosen.html">
+                    <img
+                      class="icon"
+                      src="/assets/images/Heart.png"
+                      alt="Image"
+                    />
+                  </a>
+                  Tanlangan
+                </li>
+                <li class="nav_extra_item text_lg">
+                  <span id="cart-count" class="cart-count">0</span>
+                  <a href="/pages/card.html">
+                    <img
+                      class="icon"
+                      src="/assets/images/Cart.png"
+                      alt="Image"
+                    />
+                  </a>
+                  Savat
+                </li>
+                <li class="nav_extra_item text_lg">
+                  <a href="/pages/profile.html">
+                    <img
+                      class="icon"
+                      src="/assets/images/user.png"
+                      alt="Image"
+                    />
+                  </a>
+                  Profile
+                </li>
+              </ul>
+            </div>
+            <div class="nav_bottom">
+              <ul class="nav_bottom_links">
+                <li class="nav_link text_xl">
+                  <a href="./home.html">Asosiy</a>
+                </li>
+                <li class="nav_link text_xl">
+                  <a href="./about.html">Biz haqimizda</a>
+                </li>
+                <li class="nav_link text_xl">
+                  <a href="./catalog.html">Mahsulotlar</a>
+                </li>
+                <li class="nav_link text_xl">
+                  <a href="./fillials.html">Filialar</a>
+                </li>
+                <li class="nav_link text_xl">
+                  <a href="./contact.html">Kontakt</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav class="bottom_bar_bottom">
+        <div class="container">
+          <div class="bottom_bar">
+            <ul class="bottom_bar_items">
+              <li class="bottom_bar_item">
+                <a class="text_lg" href="#">
+                  <img
+                    class="icon"
+                    src="/assets/images/Home.png"
+                    alt="Images"
+                  />
+                  Asosiy
+                </a>
+              </li>
+
+              <li class="bottom_bar_item">
+                <a class="text_lg" href="./choosen.html">
+                  <img
+                    class="icon"
+                    src="/assets/images/Heart.png"
+                    alt="Images"
+                  />
+                  Tanlanganar
+                </a>
+              </li>
+              <li class="bottom_bar_item">
+                <a class="text_lg" href="#">
+                  <img
+                    class="icon"
+                    src="/assets/images/Cart.png"
+                    alt="Images"
+                  />
+                  Savat
+                </a>
+              </li>
+              <li class="bottom_bar_item" id="nav_menu">
+                <a class="text_lg" href="#">
+                  <img
+                    class="icon"
+                    src="/assets/images/More.png"
+                    alt="Images"
+                  />
+                  Kengroq
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header -->
+
+    <section>
+      <div class="container">
+        <img src="/assets/images/slide_3.png" alt="Image" />
+      </div>
+    </section>
+    <!-- Hero -->
+
+    <section class="category">
+      <div class="container">
+        <div class="section_top">
+          <h1>Kategoriyalar</h1>
+        </div>
+        <div class="category_contents">
+          <a href="./catalog.html">
+            <div class="category_content">
+              <img
+                class="category_item"
+                src="/assets/images/air.png"
+                alt="Image"
+              />
+              <p class="text_xl">Konditsionerlar</p>
+            </div>
+          </a>
+          <a href="./catalog.html">
+            <div class="category_content">
+              <img
+                class="category_item"
+                src="/assets/images/microwave_category.png"
+                alt="Image"
+              />
+              <p class="text_xl">Mikrovalnovkalar</p>
+            </div>
+          </a>
+          <a href="./catalog.html">
+            <div class="category_content">
+              <img
+                class="category_item"
+                src="/assets/images/gas-stove.png"
+                alt="Image"
+              />
+              <p class="text_xl">Gaz Plitalari</p>
+            </div>
+          </a>
+          <a href="./catalog.html">
+            <div class="category_content">
+              <img
+                class="category_item"
+                src="/assets/images/drying.png"
+                alt="Image"
+              />
+              <p class="text_xl">Kir yuvish mashinalar</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Category -->
+
+    <section>
+      <div class="container">
+        <div class="section_top">
+          <h1>Yangilar</h1>
+        </div>
+        <div id="news_cards" class="news_cards"></div>
+      </div>
+    </section>
+    <!-- News -->
+
+    <section>
+      <div class="container">
+        <div class="section_top">
+          <h1>Trenddagilar</h1>
+        </div>
+        <div id="hit_cards" class="news_cards"></div>
+      </div>
+    </section>
+    <!-- Hits -->
+
+    <section>
+      <div class="container">
+        <div class="section_top">
+          <h1>Chegirmadagilar</h1>
+        </div>
+        <div id="sale_cards" class="news_cards"></div>
+      </div>
+    </section>
+    <!-- Sale-Products -->
+    <section>
+      <div class="container">
+        <div class="section_top">
+          <h1>Tavsiya qilinadiganlar</h1>
+        </div>
+        <div id="rec_cards" class="news_cards"></div>
+      </div>
+    </section>
+    <!-- Recommended -->
+
+    <section class="services">
+      <div class="container">
+        <h1 class="section-title">Bizning Xizmatlarimiz</h1>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="icon_ser">🚚</div>
+            <h3>Tezkor Yetkazib Berish</h3>
+            <p class="text_xl">
+              Buyurtmangiz 24 soat ichida yetkazib beriladi. Toshkent bo‘ylab
+              bepul yetkazib berish xizmati mavjud.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon_ser">🛠️</div>
+            <h3>O‘rnatish va Montaj</h3>
+            <p class="text_xl">
+              Mutaxassislarimiz maishiy texnikani o‘rnatib beradi. To‘liq
+              xavfsizlik va sifat kafolati bilan.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon_ser">🔒</div>
+            <h3>Rasmiy Kafolat</h3>
+            <p class="text_xl">
+              Barcha mahsulotlar rasmiy kafolat bilan taqdim etiladi. Servis
+              markazlarimiz doim xizmatda.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon_ser">💳</div>
+            <h3>Qulay To‘lov</h3>
+            <p class="text_xl">
+              Naqd, karta va muddatli to‘lov imkoniyati mavjud. 0% foizli to‘lov
+              rejasi taklif etiladi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Servicec -->
+
+    <section class="testimonial">
+      <div class="container">
+        <h2 class="section-title">Mijozlar Fikri</h2>
+
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <p class="review text_xl">
+              “TechHouse dan kir yuvish mashinasi oldim. Yetkazib berish tez,
+              xizmat sifati juda yuqori. Tavsiya qilaman!”
+            </p>
+            <div class="stars">★★★★★</div>
+            <h4>Azizbek T.</h4>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="review text_xl">
+              “Narxlar juda ham qulay. Muddatli to‘lov xizmati juda foydali
+              bo‘ldi. Xodimlar juda muloyim.”
+            </p>
+            <div class="stars">★★★★★</div>
+            <h4>Madina R.</h4>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="review text_xl">
+              “Konditsioner o‘rnatish xizmatidan foydalandim. Mutaxassislar tez
+              va sifatli ishlashdi.”
+            </p>
+            <div class="stars">★★★★☆</div>
+            <h4>Shahzod K.</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial -->
+
+    <section class="faq">
+      <div class="container">
+        <h1 class="section-title">Tez-tez So‘raladigan Savollar</h1>
+
+        <details class="faq-item text_xl">
+          <summary>Yetkazib berish qancha vaqt oladi?</summary>
+          <p class="text_lg">
+            Toshkent bo‘ylab 24 soat ichida yetkaziladi. Viloyatlar uchun 2–3
+            ish kuni talab etiladi.
+          </p>
+        </details>
+
+        <details class="faq-item text_xl">
+          <summary>Mahsulotlarga kafolat bormi?</summary>
+          <p class="text_lg">
+            Ha, barcha mahsulotlar rasmiy kafolat bilan taqdim etiladi. Kafolat
+            muddati mahsulot turiga qarab farq qiladi.
+          </p>
+        </details>
+
+        <details class="faq-item text_xl">
+          <summary>Muddatli to‘lov mavjudmi?</summary>
+          <p class="text_lg">
+            0% foizli muddatli to‘lov imkoniyati mavjud. Batafsil ma’lumot uchun
+            operator bilan bog‘laning.
+          </p>
+        </details>
+
+        <details class="faq-item text_xl">
+          <summary>Mahsulotni qaytarish mumkinmi?</summary>
+          <p class="text_lg">
+            14 kun ichida mahsulotni qaytarish yoki almashtirish mumkin.
+            Mahsulot asl holatda bo‘lishi kerak.
+          </p>
+        </details>
+      </div>
+    </section>
+    <!-- FAQ -->
+
+    <section class="location">
+      <div class="container">
+        <h1 class="location_title">Bizning Manzil</h1>
+        <div class="wrapper">
+          <div class="location-info">
+            <div class="info-box text_xl">
+              <h4>📍 Manzil</h4>
+              <p>Amir Temur ko‘chasi, 45A, Toshkent</p>
+            </div>
+
+            <div class="info-box text_xl">
+              <h4>📞 Telefon</h4>
+              <p>+998 71 123 45 67</p>
+            </div>
+
+            <div class="info-box text_xl">
+              <h4>🕒 Ish vaqti</h4>
+              <p>Dushanba – Shanba: 09:00 – 20:00</p>
+              <p>Yakshanba: 10:00 – 18:00</p>
+            </div>
+          </div>
+
+          <div class="location-map">
+            <iframe
+              src="https://www.google.com/maps?q=Tashkent&output=embed"
+              allowfullscreen=""
+              loading="lazy"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Location -->
+
+    <footer>
+      <div class="footer_top">
+        <div class="container">
+          <div class="footer_top_content">
+            <h1><a href="/">Tech House</a></h1>
+            <div>
+              <p class="text_xl">+998 (99) 999-99-99</p>
+              <p class="text_xl">tech_house.house@gmail.com</p>
+            </div>
+            <div>
+              <p class="text_xl">instagram.ru</p>
+              <p class="text_xl">house.com</p>
+            </div>
+            <div class="footer_top_content_buttons">
+              <button>
+                <img
+                  class="card_image"
+                  src="/assets/images/tg.png"
+                  class="icon"
+                  alt="Image"
+                />
+              </button>
+              <button>
+                <img
+                  class="card_image"
+                  src="/assets/images/vk.png"
+                  class="icon"
+                  alt="Image"
+                />
+              </button>
+              <button>
+                <img
+                  src="/assets/images/youtube.png"
+                  class="icon"
+                  alt="Image"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="container">
+          <ul class="footer_bottom_content">
+            <li class="text_md">
+              <a href="#!"> © 2023 000 Malumotlaringiz xafsiz </a>
+            </li>
+            <li class="text_md">
+              <a href="#!"> Politika tekshirish </a>
+            </li>
+            <li class="text_md">
+              <a href="#!"> Politika konfediritsiya </a>
+            </li>
+            <li class="text_md">
+              <a href="#!"> Kichik ekranlar uchun </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+    <script type="module" src="/scripts/index.js"></script>
+  </body>
+</html>
