@@ -9,7 +9,10 @@ function renderCart() {
 
     cart.forEach(item => {
         container.innerHTML += `
-        <div class="cart-item">
+        <div class="news_card">
+        <div class="news_card_top_img">
+            <img src="/assets/images/${item.image}" alt="${item.title}" class="card_image"/>
+        </div>
             <h3>${item.title}</h3>
             <p>$${item.price}</p>
 

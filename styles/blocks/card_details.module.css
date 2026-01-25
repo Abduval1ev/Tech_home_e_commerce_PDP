@@ -42,28 +42,28 @@
             flex-direction: column;
             gap: 12px;
 
-            .quantity {
-                display: flex;
-                justify-content: space-between;
-                gap: var(--gap-cards);
-
-                @media (max-width: 768px) {
-                    flex-direction: column;
-                }
-
-                ul {
-                    display: flex;
-                    justify-content: start;
-                    gap: var(--gap-cards);
-                }
-            }
         }
 
-        .card_detail_desc {
-            margin: var(--gap-cards) 0 0;
-            color: var(--base-grey);
-        }
     }
+
+}
+
+.quantity {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: var(--gap-cards);
+    background-color: var(--dark-bg-background);
+    padding: 5px;
+    color: var(--white);
+    border-radius: 8px;
+}
+
+.card_detail_desc {
+    margin: var(--gap-cards) 0 0;
+    color: var(--base-grey);
 }
 
 @media (max-width: 1024px) {

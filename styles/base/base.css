@@ -1,4 +1,5 @@
 body {
+    height: 100%;
     position: relative;
     font-size: 24px;
     font-weight: 500;
@@ -43,7 +44,7 @@ body {
         @media screen and (max-width: 1200px) {
             grid-template-columns: repeat(2, 1fr);
         }
-        
+
         .news_card {
             display: flex;
             width: 100%;
@@ -350,6 +351,7 @@ body {
 
 section {
     margin: var(--space-section-y) 0;
+    min-height: 100%;
 }
 
 

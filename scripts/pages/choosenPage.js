@@ -1,5 +1,5 @@
-import { getFavorites, toggleFavorite, updateFavCount } 
-from "../utils/storage.js";
+import { getFavorites, toggleFavorite, updateFavCount }
+    from "../utils/storage.js";
 
 function renderFavorites() {
 
@@ -9,39 +9,43 @@ function renderFavorites() {
     container.innerHTML = "";
 
     if (fav.length === 0) {
-        container.innerHTML = "<p>Tanlangan mahsulot yo‘q</p>";
+        container.innerHTML = `<p class="text_xl">Tanlangan mahsulot yo‘q</p>`;
         return;
     }
 
     fav.forEach(item => {
         container.innerHTML += `
-        <div class="card">
-            <img src=${item.image} alt=${item.title}>
-            <h3>${item.title}</h3>
-            <p>$${item.price}</p>
-            <button class="remove-fav" data-id="${item.id}">
-                O‘chirish
+        <article class="news_card">
+            <div class="news_card_top_img">
+                <img src="/assets/images/${item.image}" alt="${item.title}" class="card_image" />
+            </div>
+            <h3 class="text_xl">${item.title}</h3>
+            <p class="text_xl">$${item.price}</p>
+           <div class="double_btns">
+            <button class="add-fav remove-fav cards_button text_xl" data-id="${item.id}">
+                <img   src="/assets/images/Heart.png" alt="${item.title}" class="card_image" />
             </button>
-        </div>
+            </div>
+        </article>
         `;
     });
 }
 
 document.getElementById("favContainer")
-?.addEventListener("click", (e) => {
+    ?.addEventListener("click", (e) => {
 
-    const id = e.target.dataset.id;
-    if (!id) return;
+        const id = e.target.dataset.id;
+        if (!id) return;
 
-    if (e.target.classList.contains("remove-fav")) {
-        const fav = getFavorites();
-        const product = fav.find(p => p.id == id);
+        if (e.target.classList.contains("remove-fav")) {
+            const fav = getFavorites();
+            const product = fav.find(p => p.id == id);
 
-        toggleFavorite(product);
-        updateFavCount();
-        renderFavorites();
-    }
-});
+            toggleFavorite(product);
+            updateFavCount();
+            renderFavorites();
+        }
+    });
 
 renderFavorites();
 updateFavCount();

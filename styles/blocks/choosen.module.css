@@ -1,3 +1,8 @@
 .choosen {
-    height: 50vh;
+}
+
+.news_card{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-text-y);
 }
