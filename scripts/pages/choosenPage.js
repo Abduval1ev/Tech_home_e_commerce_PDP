@@ -21,6 +21,7 @@ function renderFavorites() {
             </div>
             <h3 class="text_xl">${item.title}</h3>
             <p class="text_xl">$${item.price}</p>
+            <p class="text_xl">${item.brand}</p>
            <div class="double_btns">
             <button class="add-fav remove-fav cards_button text_xl" data-id="${item.id}">
                 <img   src="/assets/images/Heart.png" alt="${item.title}" class="card_image" />
