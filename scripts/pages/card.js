@@ -13,16 +13,20 @@ function renderCart() {
         <div class="news_card_top_img">
             <img src="/assets/images/${item.image}" alt="${item.title}" class="card_image"/>
         </div>
-            <h3>${item.title}</h3>
-            <p>$${item.price}</p>
+            <h3 class="text_xl">${item.title}</h3>
+            <p class="text_xl">$${item.price}</p>
+            <p class="text_xl">${item.brand}</p>
 
             <div class="quantity">
                 <button class="minus" data-id="${item.id}">-</button>
                 <span>${item.quantity}</span>
                 <button class="plus" data-id="${item.id}">+</button>
             </div>
-
-            <button class="remove" data-id="${item.id}">O‘chirish</button>
+            <div class="">
+            <button class="remove" data-id="${item.id}">
+            <img class="cards_button" src="/assets/images/Cart.png"/>
+            </button>
+            </div>
         </div>
         `;
     });
